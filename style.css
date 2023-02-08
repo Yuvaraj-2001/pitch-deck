@@ -295,11 +295,173 @@ li{
 
 .desc_team-container .section_title{
     font-weight: 600;
-    font-size: 47px;
+    font-size: 50px;
     line-height: 50px;
+    max-width: 542px;
     margin-bottom: 0px;
 }
 .featured{
     padding-bottom: 20px;
     padding-top: 20px;
+}
+.testi-container{
+    padding: 50px 0px;
+    background: #DBEBF9;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.testi-content > h2{
+    font-size: 47px;
+    font-weight: 600;
+    text-align: center;
+}
+.user-testi-container{
+    display: flex;
+    justify-content: center;
+}
+.user-section-testi{
+    margin-right: 51px;
+    width: 460px;
+}
+
+.arrow-left-test{
+    background: #1b66ca;
+    border-radius: 150px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    display: flex;
+    top: 50%;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+.arrow-right-test{
+    background: #1b66ca;
+    border-radius: 150px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    top: 50%;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.projects_inner .section_title_sm {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center !important;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.owl-stage-corosol{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.projects_inner{
+    margin-top: 30px;
+}
+
+.contact-container{
+    background-image: url(../images/form_banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 0 40px;
+    margin-top: 120px;
+    background-color: #e1ecf3;
+}
+
+.contact-form-con{
+    display: flex;
+}
+.contact-heading-section{
+    width: 40%;
+}
+.form-contact-input{
+  width: 60%;
+}
+.full-input{
+    width: 100%;
+}
+.select-feild-full{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+.form-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-sides{
+    width: 47%;
+}
+.input-feild{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.select-feild{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+}
+.full-input{
+    width: 100%;
+    display: block;
+}
+.text-feild-full{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    height: 115px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-contact{
+    background-color: #1B66CA;
+    padding: 7px 63px 9px 28px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    border: 0px;
+}
+
+.contact-container{
+    background-image: url("https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/form_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 0 40px;
+    margin-top: 120px;
+    background-color: #e1ecf3;
 }
