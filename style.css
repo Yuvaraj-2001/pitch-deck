@@ -14,7 +14,10 @@ li{
 .contact-top-header{
     text-align: right;
     backdrop-filter: blur(4px);
-    background-color: #001aa6b3;
+    background-color: #124dd9;
+}
+.right-arrow{
+
 }
 .contact-top-header ul{
     width: 100%;
@@ -67,29 +70,32 @@ li{
     padding-top: 160px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -120px;
+    margin-top: -80px;
     padding-bottom: 60px;
 }
 .intro-title{
-    margin-top: 110px;
+    margin-top: 19px;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 47px;
     color: white;
-    line-height: 62px;
+    line-height: 48px;
     margin-bottom: 0px;
 }
 .intro-title-paragraph{
-    max-width: 782px;
+    max-width: 664px;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 23px;
     color: #fff;
 }
 
 .main-home-btn-container{
     display: flex;
-    gap: 10px;
-    align-items:  center;
+    gap: 24px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
 .btn-know-us{
     border-radius: 50px;
@@ -104,20 +110,15 @@ li{
 .btn-started{
     background: #fff;
     color: #292929;
-    position: relative;
-    padding: 5px 63px 5px 28px;
+    padding: 5px 19px 5px 28px;
     border-radius: 50px;
     line-height: 36px;
     font-size: 18px;
     font-weight: 700;
-}
-.btn-started:before {
-    position: absolute;
-    content: '\f061';
-    right: 25px;
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
 }
 
 .pitch-perk-main{
@@ -153,12 +154,13 @@ li{
     font-size: 45px;
     line-height: 58px;
     color: #212529;
+    margin-top: 80px;
 }
 
 .deck-card-container{
-    padding-top: 40px;
+    padding-top: 80px;
     display: flex;
-    gap: 30px
+    gap: 30px;
 }
 .deck-card{
     background: #EBEBEB;
@@ -181,7 +183,8 @@ li{
 .two_col_area > .page_title_desc{
     line-height: 32px;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 24px;
+    line-height: 28px;
     width: 55%;
 }
 .section_banner{
@@ -197,7 +200,10 @@ li{
 
 .redifined-pitch-container{
     display: flex;
-    gap: 15px;
+    gap: 70px;
+}
+.redifined-pitch-container img {
+    width: 450px;
 }
 .redifine-heading{
     text-align: start;
@@ -208,17 +214,18 @@ li{
 }
 
 .section_title_desc{
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 30px;
-    max-width: 501px;
+    line-height: 25px;
+    max-width: 610px;
     margin: 15px 0 31px;
+    color: #212529;
 }
 
 .col-blue{
-    display: inline-block;
     background-color: #1B66CA;
     color: white;
+    border: none;
 }
 .first-impression{
     padding-top: 140px;
@@ -291,24 +298,25 @@ li{
 .desc_team-container .projects_list{
     display: flex;
     gap: 40px;
+    padding-top: 22px;
 }
 
 .desc_team-container .section_title{
     font-weight: 600;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 48px;
+    line-height: 53px;
     max-width: 542px;
-    margin-bottom: 0px;
+    margin-bottom: 38px;
+    color: #212529;
 }
 .featured{
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .testi-container{
     padding: 50px 0px;
     background: #DBEBF9;
     border-radius: 30px;
-    position: relative;
     margin-top: 40px;
 }
 
@@ -331,7 +339,6 @@ li{
     border-radius: 150px;
     width: 50px;
     height: 50px;
-    position: absolute;
     left: 50px;
     display: flex;
     top: 50%;
@@ -344,7 +351,6 @@ li{
     border-radius: 150px;
     width: 50px;
     height: 50px;
-    position: absolute;
     right: 50px;
     display: flex;
     top: 50%;
@@ -443,7 +449,9 @@ li{
     border-radius: 10px;
     border: none;
 }
-
+.submit-btn{
+    margin-top: 30px;
+}
 .submit-contact{
     background-color: #1B66CA;
     padding: 7px 63px 9px 28px;
@@ -479,6 +487,7 @@ li{
 }
 .footer_address{
     width: 300px;
+    font-weight: 600;
 }
 .usefull-link-section{
     width: 40%;
@@ -511,14 +520,14 @@ li .footer_title{
 }
 .email_connect{
     display: flex;
-    align-items: center;
 }
 .email_icon{
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: #1B66CA;
     border-radius: 50%;
     padding: 10px;
+    color: white;
 }
 
 .connect_wrap {
@@ -547,9 +556,32 @@ li .footer_title{
     display: flex;
     align-items: center;
 }
-
+.contact-me{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 27px;
+    background: #fff;
+    color: #000;
+    font-weight: 800;
+    background-color: #fff;
+    backdrop-filter: blur(5px);
+}
 .connect_wrap {
     margin-left: 16px;
     font-weight: 600;
     font-size: 15px;
+}
+.social_links_inner a{
+    text-decoration: none;
+    color: #000;
+}
+.main-header-container{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    background: #001aa64a;
+}
+.testi-multi-testimonial{
+    display: flex;
+    justify-content: space-around;
 }
