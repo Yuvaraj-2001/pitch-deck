@@ -16,9 +16,6 @@ li{
     backdrop-filter: blur(4px);
     background-color: #124dd9;
 }
-.right-arrow{
-
-}
 .contact-top-header ul{
     width: 100%;
     margin: 0px;
@@ -584,4 +581,231 @@ li .footer_title{
 .testi-multi-testimonial{
     display: flex;
     justify-content: space-around;
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) { 
+    .pitch-con{
+       max-width: 1000px;
+    }
+    .home-main-banner{  
+      background-position: top right;
+    }
+    .desc_team-container{
+        flex-direction: column;  
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) { 
+    .pitch-con{
+        max-width: 750px;
+        padding: 15px 0px;
+     }
+    .menu-items{
+        display: none;
+    }
+    .home-main-banner{  
+        background-position: top right;
+    }
+    .desc_team-container{
+        flex-direction: column;  
+    }
+    .main-header-container{
+        padding: 15px 0px;
+    }
+    .home-main-banner{
+        margin-top: -85px;
+    }
+}
+@media only screen and (max-device-width: 800px) {
+    /* STYLES HERE */
+    .menu-items{
+        display: none;
+    }
+    .main-header-container{
+      padding: 20px 20px;
+    }
+    .pitch-con{
+        padding: 0px 20px;
+    }
+    .intro-title{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .pitch-perk-main{
+        flex-direction: column;    
+    }
+    .service_name > h5 {
+        max-width: 100%;
+    }
+    .service_item{
+        margin-bottom: 20px;
+    }
+    .section_title_center{
+        max-width: 100%;
+    }
+    .deck-card-container, .investor-container{
+        flex-direction: column;
+    }
+    .redifined-pitch-container{
+        flex-direction: column;
+    }
+    .impression-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .desc_team-container{
+        flex-direction: column-reverse;
+    }
+    .testi-container{
+        padding: 50px 25px;
+    }
+    .arrow-left-test{
+        width: 90px;
+        padding: 5px;
+    }
+    .arrow-right-test{
+        width: 90px;
+        padding: 5px;
+    }
+    .testi-multi-testimonial{
+        align-items: center;
+    }
+    .user-testi-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .projects_list, .owl-stage-corosol{
+        flex-wrap: wrap;
+    }
+    .contact-heading-section {
+        width: 100%;
+        text-align: center;
+    }
+    .form-contact-input{
+        width: 100%;
+    }    
+    .contact-form-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .usefull-link-section {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+    }
+    .last-footer-forever{
+        width: 100%; 
+        padding-left: 0px;
+        padding: 20px 0px;
+    }
+    .user-section-testi{
+        margin: 0px;
+        width: 100%;
+    }
+    .redifined-pitch-container img{
+        width: 100%;
+    }
+    .image_area img{
+        width: 100%;
+    }
+    .owl-stage-corosol{
+        gap: 20px;
+    }
+    .input-sides{
+        width: 100%;
+    }
+    .two_col_area{
+        gap: 20px;
+    }
+    .two_col_area > .page_title_desc{
+        width: 100%;
+    }
+    .last_img{
+        display: none;
+    }
+    .section_banner .container_inner{
+        padding: 30px 30px;
+    }
+}
+
+@media only screen and (max-device-width: 500px){
+    .intro-title {
+        font-size: 34px;
+        line-height: 32px;
+    }
+    .main-home-btn-container{
+        flex-direction: column;
+        align-items: start;
+    }
+    .service_item > .service_img{
+        padding: 20px 10px;
+        font-size: 24px;
+        font-weight: 900;
+    }
+    .section_title_center{
+        font-size: 32px;
+      line-height: 36px;
+     margin-top: 40px;
+    }
+    .two_col_area > .page_title_desc{
+        font-size: 19px;
+        line-height: 20px;
+    }
+    .two_col_area > .first_img{
+        font-size: 45px;
+    }
+    .redifined-pitch-container{
+        gap: 30px;
+    }
+    .redifine-heading{
+        font-size: 34px;
+    line-height: 35px;
+    }
+    .impression-grid{
+        gap: 20px;
+    }
+    .presentation-con{
+        flex-direction: column;
+        align-items: center;
+        padding: 27px;
+    }
+    .section_title_sm{
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .form-flex{
+        gap: 20px;
+    }
+    .testi-content > h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .featured-title{
+        font-size: 35px;
+    } 
+    .arrow-left-test svg{
+        flex-shrink: 1;
+        padding: 6px;
+    }
+    .arrow-right-test {
+        width: 165px;
+        padding: 5px;
+    }
+    .arrow-left-test{
+        width: 160px;
+    }
+    .desc_team-container .section_title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .contact-top-header ul{
+        justify-content: center;
+    }
 }
