@@ -770,6 +770,7 @@ li .footer_title{
     }
     .impression-grid{
         gap: 20px;
+        grid-template-columns: 1fr;
     }
     .presentation-con{
         flex-direction: column;
@@ -807,5 +808,10 @@ li .footer_title{
     }
     .contact-top-header ul{
         justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service_name > h5 {
+        max-width: 200px;
     }
 }
