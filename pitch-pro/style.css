@@ -7,15 +7,22 @@ body{
         max-width: 1250px;
     }
 }
-
+.pitch-pro-common-preview{
+    position: relative;
+    margin-top: -97px;
+}
+.menu-items li{
+    color: #3476a5;
+}
 header.main-header-container{
     padding: 15px 0px;
     position: sticky;
     top: -1px;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.12);
-    backdrop-filter: blur(4px);
-    background-color: #0d30b83d;
+    background-color: transparent;
+    /* background-color: rgba(0, 0, 0,  0.12); */
+    backdrop-filter: blur(15px);
+    /* background-color: #0d30b83d; */
 }
 
 .header-menu-font{
@@ -26,18 +33,31 @@ header.main-header-container{
 .contact-us{
     margin-top: 10px;
 }
+.main-section-intro{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.pitch-pro-logo{
+    width: 400px;
+    height: 308px;
+    position: absolute;
+    left: 50px;
+    top: -115px;
+}
+#intro-video{
+    width: 100%;
+}
 .contact-top-header{
     background-color: #124dd9;
     padding: 10px 0px;
     height: 50px;
-    position: relative;
 }
 .main-header-container{
     background-color: #124dd9;
 }
 .main-section-intro{
-    background-image: url('https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/homepage_banner.png');
-    padding-top: 200px;
+    padding-top: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -100px;
@@ -47,13 +67,14 @@ header.main-header-container{
 .main-section-intro h1{
     font-size: 3rem;
     font-weight: 800;
-    color: #fff;
+    color: #3476a5;
 }
 .main-section-intro p{
-    font-size: 1rem;
-    font-weight: 600;
-    max-width: 680px;
-    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    max-width: 677px;
+    color: #3476a5;
+    padding-top: 20px;
 }
 .main-section-intro .white-button, .get-start-btn{
     font-size: 1rem;
@@ -71,8 +92,8 @@ header.main-header-container{
     color: #000;
 }
 .primary-color{
-    background: #1B66CA;
-    color: #fff;
+    background: #fff;
+    background: #3476a5;
     border: none;
 }
 .main-section-btn-group{
@@ -229,6 +250,9 @@ header.main-header-container{
     padding-bottom: 2rem;
 }
 /* Talk to us section */
+.contact-form-container{
+    background: #e1ebf3;
+}
 
 /* Common Footer */
 .pitch-pro-common-footer{
