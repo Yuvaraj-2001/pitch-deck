@@ -1,0 +1,127 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+@media screen and (min-width: 1300px) {
+    .container{
+        max-width: 1250px;
+    }
+}
+
+header.main-header-container{
+    padding: 15px 0px;
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    background-color: #0d30b83d;
+}
+
+.header-menu-font{
+    padding-left: 10px;
+    line-height: 1.2rem;
+    color: #fff; 
+}
+.contact-us{
+    margin-top: 10px;
+}
+.get-start-btn {
+    background: #fff;
+    color: #000;
+}
+.get-start-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem; 
+    border-radius: 1.5rem;
+}
+.contact-top-header{
+    background-color: #124dd9;
+    padding: 10px 0px;
+    height: 50px;
+    position: relative;
+}
+.main-header-container{
+    background-color: #124dd9;
+}
+
+
+.main-header-container{
+    background-color: #124dd9;
+}
+
+
+/* Common Footer */
+.pitch-pro-common-footer{
+    font-size: 16px;
+    padding-top: 4rem;
+}
+
+.address-footer{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.footer-menu-list h5{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.menu-list-items-footer{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.menu-list-items-footer li{
+    padding: 4px 0px;
+}
+.email-connect-svg{
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+.phone-connect-svg{
+    padding-right: 10px;
+}
+.phone-connect-item{
+    background: aliceblue;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+/* contact us page css */
+.contact-heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.map-address-title{
+    font-size: 3rem;
+    font-weight: 600; 
+}
+.contact-list-item{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px 0px;
+    gap: 20px;
+}
+.contact-list-item > img{
+    height:20px;
+}
+.map-address-container{
+    padding-left: 20px;
+}
+.email-connect-svg{
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+.primary-color{
+    background: #1B66CA;
+    color: #fff;
+    border: none;
+}

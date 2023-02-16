@@ -1,0 +1,325 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+@media screen and (min-width: 1300px) {
+    .container{
+        max-width: 1250px;
+    }
+}
+
+header.main-header-container{
+    padding: 15px 0px;
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    background-color: #0d30b83d;
+}
+
+.header-menu-font{
+    padding-left: 10px;
+    line-height: 1.2rem;
+    color: #fff; 
+}
+.contact-us{
+    margin-top: 10px;
+}
+.contact-top-header{
+    background-color: #124dd9;
+    padding: 10px 0px;
+    height: 50px;
+    position: relative;
+}
+.main-header-container{
+    background-color: #124dd9;
+}
+.main-section-intro{
+    background-image: url('https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/homepage_banner.png');
+    padding-top: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    padding-bottom: 60px;
+    font-size: 16px;
+}
+.main-section-intro h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+.main-section-intro p{
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 680px;
+    color: #fff;
+}
+.main-section-intro .white-button, .get-start-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem; 
+    border-radius: 1.5rem;
+}
+.main-section-intro .white-button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 1rem;
+}
+.get-start-btn{
+    background: #fff;
+    color: #000;
+}
+.primary-color{
+    background: #1B66CA;
+    color: #fff;
+    border: none;
+}
+.main-section-btn-group{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.menu-list-style > li{
+    padding: 5px 15px;
+}
+
+.perk-paragraph{
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 200px;
+    padding-left: 20px;
+}
+
+.perk-percentage{
+    background: aliceblue;
+    padding: 26px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 800;
+}
+.percentage-brief-section{
+    padding: 45px 0px;
+}
+
+/* Funding Section CSS */
+.funding-section-info{
+    font-size: 16px;
+}
+.funding-section-info .funding-title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #212529;
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 4rem !important;
+}
+.funding-section-info h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1B66C9;
+    margin: 0px;
+}
+.funding-card-info{
+    background-color: #ebebeb;
+    padding: 1.6rem;
+    border-radius: 20px;
+}
+.funding-card-title{
+    font-size: 1.5rem;
+    padding: 0rem 3rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+/* Redifining Css */
+.section-redifine-container{
+    font-size: 16px;
+    margin-top: 60px;
+}
+.section-redifine-content{
+    background-color:#e1ebf3;
+    padding: 3rem;
+    border-radius: 20px;
+}
+.deck-redifine-heading{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.deck-redifine-paragraph{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem; 
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+/* First Impresstion */
+.first-impress-container{
+    font-size: 16px;
+}
+.first-impress-heading{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 2.9rem;
+    font-weight: 600;
+    margin-bottom: 3rem !important;
+}
+.impression-img-brief{
+    padding-bottom: 4rem;
+}
+.impression-img-con{
+    width: 70px;
+}
+.impression-img-paragraph{
+    margin: 0px;
+    padding-left: 10px;
+    max-width: 200px;
+}
+
+/* Investment Section */
+.investor-deck-container{
+    background-color: #d4d6d7;
+    font-size: 16px;
+    padding: 60px 0px;
+}
+.investor-deck-title{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 80px;
+}
+.investor-presentation{
+    padding: 58px 0px 45px 60px;
+    background: #fff;
+    border-radius: 30px;
+}
+.investor-presentation img{
+    width: 80px;
+    height: 80px;
+}
+.investor-present-sub{
+    padding-left: 2rem;
+}
+.investor-present-title{
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    padding-right: 1rem;
+    line-height: 2rem;
+}
+
+/* Live breath Container */
+.live-breath-container{
+    font-size: 16px;
+    padding-top: 6rem;
+}
+.live-breath-heading{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.live-breath-para{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-top: 20px;
+    font-weight: 500;
+    padding-bottom: 3rem;
+}
+
+.featured-in{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+/* Talk to us section */
+
+/* Common Footer */
+.pitch-pro-common-footer{
+    font-size: 16px;
+    padding-top: 4rem;
+}
+
+.address-footer{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.footer-menu-list h5{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.menu-list-items-footer{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.menu-list-items-footer li{
+    padding: 4px 0px;
+}
+.email-connect-svg{
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+.phone-connect-svg{
+    padding-right: 10px;
+}
+.phone-connect-item{
+    background: aliceblue;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+@media screen and  (max-width: 425px) {
+    .container{
+        padding: 0px 20px;
+    }
+    .funding-section-info h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .funding-card-title{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        padding: 0rem 1rem;
+    }
+    
+    .contact-top-header{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-section-intro h1, .funding-section-info .funding-title, .deck-redifine-heading{
+        font-size: 2rem;
+        max-width: 100% !important;
+    }
+    .deck-redifine-heading{
+        padding-top: 2rem;
+    }
+    .first-impress-heading{
+        font-size: 2rem;
+    }
+    .impression-img-brief{
+        margin-left: 30px;
+    }
+    .investor-deck-title{
+        font-size: 1.5rem;
+    }
+    .investor-present-title{
+        font-size: 1.2rem;
+    }
+    .investor-present-sub{
+        padding-left: 0rem;
+    }
+    .live-breath-heading{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .news-letter{
+        justify-content: start;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+    .main-section-intro{
+        margin-top: -100px;
+    }
+}
