@@ -9,20 +9,23 @@ body{
 }
 .pitch-pro-common-preview{
     position: relative;
-    margin-top: -97px;
+    margin-top: -72px;
+}
+.menu-items{
+    margin-top: 20px;
 }
 .menu-items li{
     color: #3476a5;
 }
 header.main-header-container{
-    padding: 15px 0px;
     position: sticky;
     top: -1px;
     z-index: 2;
+    height: 72px;
     background-color: transparent;
     /* background-color: rgba(0, 0, 0,  0.12); */
-    backdrop-filter: blur(15px);
-    /* background-color: #0d30b83d; */
+    backdrop-filter: blur(4px);
+    /* background-color: #eaedef; */
 }
 
 .header-menu-font{
@@ -39,13 +42,15 @@ header.main-header-container{
     width: 100%;
 }
 .pitch-pro-logo{
-    width: 400px;
-    height: 308px;
+    width: 196px;
+    /* margin-left: -4%; */
     position: absolute;
-    left: 50px;
-    top: -115px;
+    left: 5%;
 }
 #intro-video{
+    width: 100%;
+}
+#intro-video-mobile{
     width: 100%;
 }
 .contact-top-header{
@@ -55,6 +60,26 @@ header.main-header-container{
 }
 .main-header-container{
     background-color: #124dd9;
+}
+/* Mobile View main section */
+@media screen and (max-width: 970px) {
+    .pitch-pro-common-preview{
+        margin-top: 0px;
+    }
+    .pitch-pro-logo{
+        width: 150px;
+    }
+    header.main-header-container{
+        background-color: #eaedef;
+        display: flex;
+        align-items: center;
+    }
+    .perk-percentage-con{
+        margin-bottom: 20px;
+    }
+    .funding-section-info .funding-title{
+        max-width: 100% !important;
+    }
 }
 .main-section-intro{
     padding-top: 300px;
@@ -95,6 +120,11 @@ header.main-header-container{
     background: #fff;
     background: #3476a5;
     border: none;
+    color: #fff;
+}
+.primary-color:hover{
+    background: #4298d4;
+    color: #fff;
 }
 .main-section-btn-group{
     padding-top: 2rem;
@@ -104,6 +134,8 @@ header.main-header-container{
     padding: 5px 15px;
 }
 
+
+/* Perk Section */
 .perk-paragraph{
     font-size: 1rem;
     font-weight: 600;
@@ -252,6 +284,14 @@ header.main-header-container{
 /* Talk to us section */
 .contact-form-container{
     background: #e1ebf3;
+}
+.contact-talk-us{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.contact-talk-paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /* Common Footer */

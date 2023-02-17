@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="main-header-container">
+<header class="main-header-container">
+    <img src="assets/pitchProLogo.svg" class="pitch-pro-logo"/>
     <div class="container">
         <div class="w-100 d-flex align-items-center justify-content-end">
-        <img src="assets/PitchPro Logo for Website (1).svg" class="pitch-pro-logo"/>
         <div class="menu-items">
             <ul class="list-unstyled d-none d-lg-block menu-list-style">
             <li class="d-inline">Home</li>
@@ -32,8 +32,12 @@
 </header>
 
   <section class="pitch-pro-common-preview">
-    <video autoplay muted loop id="intro-video">
-      <source src="assets/pitch-pro-preview.mp4" type="video/mp4">
+    <video autoplay muted loop id="intro-video" class="d-none d-md-block">
+      <source src="assets/desktop-video-intro.mp4" loading="lazy" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <video autoplay muted loop id="intro-video-mobile" class="d-md-none">
+      <source src="assets/mobile-video-preview.mp4"loading="lazy" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <!-- <section class="contact-top-header" style="display: none">
@@ -49,7 +53,7 @@
         </ul>
       </div>
   </section> -->
-<section class="main-section-intro">
+<!-- <section class="main-section-intro">
     <div class="container">
         <h1>Pitch Decks
           <span class="d-block"></span>
@@ -59,7 +63,7 @@
           Every Effort goes counted!
          </p>
          <div class="main-section-btn-group">
-            <!-- <a href="contact.html" class="btn btn-primary white-button">Know us</a> -->
+            <a href="contact.html" class="btn btn-primary white-button">Know us</a>
             <a style="border: 2px solid white;" href="contact-us.html" class="btn btn-primary primary-color">
               Know More 
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -68,7 +72,7 @@
             </a>
          </div>
     </div>
-</section>
+</section> -->
   </section>   
   
 
@@ -147,7 +151,7 @@
         <div class="section-redifine-content">
           <div class="row">
             <div class="col-lg-5">
-              <img class="w-100 d-none d-md-block" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/world_img.png">
+              <img class="w-100 d-none d-md-block" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/world_img.png" alt="world-map">
             </div>
             <div class="col-lg-7 pl-md-5">
               <h2 class="deck-redifine-heading">Redefining Pitch Deck Creation</h2>
@@ -174,7 +178,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="impression-img-brief d-flex justify-content-md-center align-items-center">
-              <img class="impression-img-con" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/content.png" alt="">
+              <img class="impression-img-con" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/content.png" alt="content">
               <p class="impression-img-paragraph">
                 Professional Content
               </p>
@@ -182,7 +186,7 @@
           </div>
           <div class="col-md-4">
             <div class="impression-img-brief d-flex justify-content-md-center align-items-center">
-              <img class="impression-img-con" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/storyline.png" alt="">
+              <img class="impression-img-con" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/storyline.png" alt="story img">
               <p class="impression-img-paragraph">
                 Persuasive Narrative & Storyline
               </p>
@@ -190,7 +194,7 @@
           </div>
           <div class="col-md-4">
             <div class="impression-img-brief d-flex justify-content-md-center align-items-center">
-              <img class="impression-img-con" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/research.png" alt="">
+              <img class="impression-img-con" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/research.png" alt="research img">
               <p class="impression-img-paragraph">  
                 Credible Market Research
               </p>
@@ -198,7 +202,7 @@
           </div>
           <div class="col-md-4">
             <div class="impression-img-brief d-flex justify-content-md-center align-items-center">
-              <img class="impression-img-con" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/design.png" alt="">
+              <img class="impression-img-con" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/design.png" alt="desgn img">
               <p class="impression-img-paragraph">
                 Jaw-dropping Design
               </p>
@@ -206,7 +210,7 @@
           </div>
           <div class="col-md-4">
             <div class="impression-img-brief d-flex justify-content-md-center align-items-center">
-              <img class="impression-img-con" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/finance_rate.png" alt="">
+              <img class="impression-img-con" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/finance_rate.png" alt="finance img">
               <p class="impression-img-paragraph">
                 Reliable Financial Projecions
               </p>
@@ -214,7 +218,7 @@
           </div>
           <div class="col-md-4">
             <div class="impression-img-brief d-flex justify-content-md-center align-items-center">
-              <img class="impression-img-con" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/protection.png" alt="">
+              <img class="impression-img-con" loading="lazy" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/protection.png" alt="protection-img">
               <p class="impression-img-paragraph">
                 Complete Protection via NDA
               </p>
@@ -233,7 +237,7 @@
               </div>
               <div class="col-md-6">
                  <div class="investor-presentation d-lg-flex">
-                   <img src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/invesment_img.png" alt="">
+                   <img src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/invesment_img.png" loading="lazy" alt="investment img">
                    <div class="investor-present-sub">
                       <p class="investor-present-title" >You Only Have Few Minutes to Wow the Investors.</p>
                       <button class="get-start-btn primary-color">
@@ -288,7 +292,7 @@
         </div>
     </section>
 
-    <section class="contact-form-container">
+    <section class="contact-form-container mt-5 py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-5">
@@ -334,6 +338,7 @@
                       <label>Message</label>
                       <textarea class="form-control" height="200px"></textarea>
                     </div>
+                    <button class="btn btn-block primary-color">Submit</button>
                 </div>
               </div>
           </div>
