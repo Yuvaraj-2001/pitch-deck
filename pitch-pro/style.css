@@ -109,9 +109,6 @@ header.main-header-container{
         display: flex;
         align-items: center;
     }
-    .perk-percentage-con{
-        margin-bottom: 20px;
-    }
     .funding-section-info .funding-title{
         max-width: 100% !important;
     }
@@ -173,17 +170,22 @@ header.main-header-container{
 /* Perk Section */
 .perk-paragraph{
     font-size: 1rem;
-    font-weight: 600;
-    max-width: 200px;
+    font-weight: 500;
+    max-width: 300px;
     padding-left: 20px;
 }
-
+.perk-percentage-con{
+    margin-bottom: 18px;
+}
 .perk-percentage{
     background: aliceblue;
-    padding: 26px;
+    padding: 26px 20px;
     border-radius: 100%;
     font-size: 30px;
     font-weight: 800;
+}
+.perk-percentage.low-perk{
+    padding: 26px 26px;
 }
 .percentage-brief-section{
     padding: 45px 0px;
@@ -426,4 +428,10 @@ header.main-header-container{
     .main-section-intro{
         margin-top: -100px;
     }
+}
+
+.help-block{
+    color: red;
+    font-weight: 400;
+    padding-top: 1px;
 }
