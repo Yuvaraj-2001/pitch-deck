@@ -108,6 +108,44 @@ header.main-header-container{
 .main-header-container{
     background-color: #124dd9;
 }
+/* Nav bar start */
+#nav-check-box{
+    display: none;
+}
+
+.navigation-panel{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #789db7;
+    top: 72px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+#nav-check-box:checked ~ .navigation-panel{
+    left: 0;
+}
+#nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
+    display: none;
+}
+#nav-check-box:checked ~ .cross-nav-con{
+    display: block;
+}
+.list-menu-mobile{
+    padding-top: 30px;
+}
+.list-menu-mobile li{
+    padding: 15px 15px;
+    color: #fff;
+}
+.list-menu-mobile a{
+    color: #fff;
+}
+.list-menu-mobile a:hover{
+    color: #000;
+}
+/* Nav bar End */
 
 
 /* Common Footer */
