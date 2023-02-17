@@ -174,7 +174,7 @@ header.main-header-container{
     max-width: 300px;
     padding-left: 20px;
 }
-.perk-percentage-con{
+.perk-percentage-con, .funding-card-info{
     margin-bottom: 18px;
 }
 .perk-percentage{
