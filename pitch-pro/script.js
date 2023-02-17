@@ -61,6 +61,18 @@ function validateUSername(){
             service: idval('user_service'),
             message: idval('user_message')
         }
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+        xmlhttp.open("POST", "https://app-yx1k.onrender.com/pitchpro");
+        xmlhttp.setRequestHeader("Content-Type", "application/json");
+        xmlhttp.send(JSON.stringify(userForm));
+        xmlhttp.onload = () => {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById('success').value = "Form Submitted";
+
+          } else {
+            console.log(`Error: ${xmlhttp.status}`);
+          }
+        };
         console.log(userForm);
     }, function(){
         console.log("Good bye");
