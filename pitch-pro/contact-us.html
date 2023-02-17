@@ -10,27 +10,67 @@
 </head>
 <body>
     <header class="main-header-container">
-        <div class="container">
-            <div class="w-100 d-flex align-items-center justify-content-between">
-            <a href="index.html">
-                <img src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/logo_white.png" class="pitch-pro-logo">
-            </a>
-            <div class="menu-items">
-                <ul class="list-unstyled d-none d-lg-block menu-list-style">
-                <!-- <li class="d-inline">About Us</li>
-                <li class="d-inline">Accelerate X</li>
-                <li class="d-inline">Services</li>
-                <li class="d-inline">Our work</li>
-                <li class="d-inline">Blogs</li> -->
-                <li class="d-inline contact ">
-                    <a class="btn btn-primary get-start-btn contact-us" href="contact-us.html">Contact US</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </div>
-    </header>
+      <img src="assets/pitchProLogo.svg" class="pitch-pro-logo"/>
+      <div class="container">
+          <div class="w-100 d-flex align-items-center justify-content-end">
+          <div class="menu-items">
+              <ul class="list-unstyled d-none d-lg-block menu-list-style">
+                <a href="index.html"><li class="d-inline">Home</li></a>
+              <li class="d-inline">About Us</li>
+              <li class="d-inline">Service</li>
+              <li class="d-inline">Why we?</li>
+              <li class="d-inline contact ">
+                  <a class="btn btn-primary primary-color" href="contact-us.html">Contact US</a>
+              </li>
+              </ul>
+          </div>
+          </div>
+      </div>
+  </header>
 
+    <section class="pitch-pro-common-preview">
+      <!-- <video autoplay muted loop id="intro-video" class="d-none d-md-block">
+        <source src="assets/desktop-video-intro.mp4" loading="lazy" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <video autoplay muted loop id="intro-video-mobile" class="d-md-none">
+        <source src="assets/mobile-video-preview.mp4"loading="lazy" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video> -->
+      <!-- <section class="contact-top-header" style="display: none">
+        <div class="container clearfix">
+          <ul class="list-unstyled d-flex justify-content-around d-md-block float-md-right">
+            <li class="d-flex align-items-center d-md-inline">
+              <img src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/talk_with_expert.png" alt="phone" width="25px" height="25px"/>
+              <a href="#" class="header-menu-font">Talk to experts</a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="header-menu-font">Call now: +91 92679-62328</a>
+            </li>
+          </ul>
+        </div>
+    </section> -->
+  <!-- <section class="main-section-intro">
+      <div class="container">
+          <h1>Pitch Decks
+            <span class="d-block"></span>
+           That You Need!</h1>
+           <p>We build Pro Decks so that
+            <span class="d-block"></span>
+            Every Effort goes counted!
+           </p>
+           <div class="main-section-btn-group">
+              <a href="contact.html" class="btn btn-primary white-button">Know us</a>
+              <a style="border: 2px solid white;" href="contact-us.html" class="btn btn-primary primary-color">
+                Know More 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                </svg>
+              </a>
+           </div>
+      </div>
+  </section> -->
+    </section>  
     <section class="contact-main-view-map">
         <div class="container">
             <h1 class="contact-heading">Contact Us</h1>
@@ -65,12 +105,66 @@
 
     </section>
 
+    <section class="contact-form-container mt-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h3 class="contact-talk-us">Talk to us</h3>
+            <p class="contact-talk-paragraph">Get a call from out experts</p>
+          </div>
+          <div class="col-lg-7">
+              <div class="connect-us-form-container">
+                <div class="connect-us-form">
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" placeholder="Enter Your Name  ">
+                    </div>
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input type="text" class="form-control" placeholder="Enter Your Email  ">
+                    </div>
+                    <div class="form-group">
+                      <label>Country</label>
+                      <select class="form-control">
+                        <option value="">Uttar Pradesh</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Haryana</option>
+                        <option value="">Andra Pradesh</option>
+                        <option value="">Tamil Nadu</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Phone</label>
+                      <input type="text" class="form-control" placeholder="Enter Your Mobile Number">
+                    </div>
+                    <div class="form-group">
+                      <label>Select Service</label>
+                      <select class="form-control">
+                        <option value="">All</option>
+                        <option value="">Pitch Deck</option>
+                        <option value="">Financial Model</option>
+                        <option value="">Business Plan</option>
+                        <option value="">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Message</label>
+                      <textarea class="form-control" height="200px"></textarea>
+                    </div>
+                    <button class="btn btn-block primary-color">Submit</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="pitch-pro-common-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-3">
                   <div class="footer-logo">
-                    <img src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/logo.png" alt="">
+                    <img src="assets/pitchProLogo.svg" class="pitch-pro-footer-logo"  alt="">
                     <p class="address-footer">Block 28, Building No. 78, First Floor, West Patel Nagar, New Delhi-110008, India</p>
                   </div>
                 </div>

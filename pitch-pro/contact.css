@@ -8,16 +8,73 @@ body{
         max-width: 1250px;
     }
 }
-
+#intro-video{
+    width: 100%;
+}
+#intro-video-mobile{
+    width: 100%;
+}
+.menu-items{
+    margin-top: 20px;
+}
+.menu-items li{
+    color: #3476a5;
+}
+.pitch-pro-logo{
+    width: 196px;
+    /* margin-left: -4%; */
+    position: absolute;
+    left: 5%;
+}
+.primary-color{
+    background: #fff;
+    background: #3476a5;
+    border: none;
+    color: #fff;
+}
+.primary-color:hover{
+    background: #4298d4;
+    color: #fff;
+}
+.menu-list-style > li{
+    padding: 5px 15px;
+}
+.pitch-pro-footer-logo{
+    width: 200px;
+    margin-left: -3%;
+    margin-top: -10%;
+}
 header.main-header-container{
-    padding: 15px 0px;
     position: sticky;
     top: -1px;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.12);
+    height: 72px;
+    background-color: #3476a54d;
+    /* background-color: rgba(0, 0, 0,  0.12); */
     backdrop-filter: blur(4px);
-    background-color: #0d30b83d;
+    /* background-color: #eaedef; */
 }
+
+@media screen and (max-width: 970px) {
+    .pitch-pro-common-preview{
+        margin-top: 0px;
+    }
+    .pitch-pro-logo{
+        width: 150px;
+    }
+    header.main-header-container{
+        background-color: #eaedef;
+        display: flex;
+        align-items: center;
+    }
+    .perk-percentage-con{
+        margin-bottom: 20px;
+    }
+    .funding-section-info .funding-title{
+        max-width: 100% !important;
+    }
+}
+
 
 .header-menu-font{
     padding-left: 10px;
@@ -86,9 +143,22 @@ header.main-header-container{
 .phone-connect-item{
     background: aliceblue;
     padding: 0.4rem 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 2rem;
+}
+
+/* Talk to us section */
+.contact-form-container{
+    background: #e1ebf3;
+}
+.contact-talk-us{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.contact-talk-paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /* contact us page css */
@@ -119,9 +189,4 @@ header.main-header-container{
     padding: 0.5rem 0.7rem;
     border-radius: 2rem;
     margin-right: 1rem;
-}
-.primary-color{
-    background: #1B66CA;
-    color: #fff;
-    border: none;
 }
