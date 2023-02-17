@@ -228,3 +228,8 @@ header.main-header-container{
     border-radius: 2rem;
     margin-right: 1rem;
 }
+.help-block{
+    color: red;
+    font-weight: 400;
+    padding-top: 1px;
+}
