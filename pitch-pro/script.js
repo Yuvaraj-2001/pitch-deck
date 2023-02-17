@@ -83,3 +83,15 @@ function validateUSername(){
 function idval(id){
     return document.getElementById(id).value;
 }
+
+function dsdasd(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://app-yx1k.onrender.com/pitchpro", true);
+  xhttp.send();
+}
