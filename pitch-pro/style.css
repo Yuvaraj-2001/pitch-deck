@@ -353,7 +353,7 @@ header.main-header-container{
     font-size: 1rem;
     line-height: 1.4rem;
     padding-top: 20px;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: 3rem;
 }
 
@@ -428,9 +428,10 @@ header.main-header-container{
         font-weight: 700;
     }
     .funding-card-title{
-        font-size: .8rem;
+        font-size: 1.0rem;
         line-height: 1.3rem;
         padding: 0rem 1rem;
+        font-weight: 700;
     }
     
     .contact-top-header{
@@ -441,14 +442,18 @@ header.main-header-container{
 @media screen and (max-width: 600px) {
     .section-redifine-content{
         padding: 1rem;
+        font-weight: 700;
+
     }
     .deck-redifine-paragraph{
-        font-size: .8rem;
+        font-size: 1rem;
+        font-weight: 800;
     }
     .main-section-intro h1, .first-impress-heading,
     .funding-section-info .funding-title, .deck-redifine-heading{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         max-width: 100% !important;
+        font-weight: 700;
     }
     .investor-presentation{
         padding: 25px 0px 25px 20px;
@@ -475,6 +480,7 @@ header.main-header-container{
     .live-breath-heading{
         font-size: 2rem;
         line-height: 2rem;
+        font-weight: 700;
     }
     .news-letter{
         justify-content: start;
