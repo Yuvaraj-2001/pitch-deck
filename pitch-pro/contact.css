@@ -233,3 +233,6 @@ header.main-header-container{
     font-weight: 400;
     padding-top: 1px;
 }   
+#spin-on{
+    display:none;
+}
