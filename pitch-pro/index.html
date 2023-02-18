@@ -5,28 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="main-header-container">
-    <img src="assets/pitchProLogo.svg" class="pitch-pro-logo"/>
+  <header class="main-header-container">
+    <img src="assets/pitchProLogo.svg" onclick="location.href='index.html'" class="pitch-pro-logo"/>
     <div class="container">
         <div class="w-100 d-flex align-items-center justify-content-end">
         <div class="menu-items">
             <ul class="list-unstyled d-none d-lg-block menu-list-style">
-            <li class="d-inline">Home</li>
+              <a href="index.html"><li class="d-inline">Home</li></a>
             <li class="d-inline">About Us</li>
-            <li class="d-inline">Service</li>
+            <li class="d-inline services-dropdown-con">
+              <input type="checkbox" class="d-none" id="service-dropdown-id" value="0" >
+              <label for="service-dropdown-id">
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-down" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-up" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                </svg>
+                <div class="services-dropdown list-unstyled">
+                  <div class="services-dropdown-list">One pager website</div>
+                  <div class="services-dropdown-list">Digital Marketing</div>
+                  <div class="services-dropdown-list">Web development</div>
+                  <div class="services-dropdown-list">Management</div>
+                  <div class="services-dropdown-list">Founder grooming</div>
+                  <div class="services-dropdown-list">Research and development</div>
+                </div>
+
+            </li>
             <li class="d-inline">Why we?</li>
             <li class="d-inline contact ">
-                <a class="btn btn-primary btn btn-primary primary-color" href="contact-us.html">Contact US</a>
+                <a class="btn btn-primary primary-color" href="contact-us.html">Contact US</a>
             </li>
             </ul>
         </div>
+
         <nav class="d-lg-none">
           <input type="checkbox" id="nav-check-box" value="0">
           <label for="nav-check-box" class="three-nav-con">
@@ -43,7 +64,26 @@
             <ul class="list-unstyled menu-list-style list-menu-mobile">
               <a href="index.html"><li>Home</li></a>
             <li>About Us</li>
-            <li>Service</li>
+            <li class="d-inline services-dropdown-con">
+              <input type="checkbox" class="d-none" id="service-dropdown-id-mob" value="0" >
+              <label for="service-dropdown-id-mob">
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-down" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-up" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                </svg>
+                <div class="services-dropdown list-unstyled">
+                  <div class="services-dropdown-list">One pager website</div>
+                  <div class="services-dropdown-list">Digital Marketing</div>
+                  <div class="services-dropdown-list">Web development</div>
+                  <div class="services-dropdown-list">Management</div>
+                  <div class="services-dropdown-list">Founder grooming</div>
+                  <div class="services-dropdown-list">Research and development</div>
+                </div>
+
+            </li>
             <li>Why we?</li>
             <li class="contact">
                 <a class="btn btn-primary primary-color" href="contact-us.html">Contact US</a>
@@ -181,6 +221,16 @@
                 </div>
               </div>
           </div>
+            <div class="col-lg-6">
+              <div class="funding-card-info d-flex justify-content-around align-items-center">
+                <h3>1/5</h3>
+                <div class="funding-card-title">
+                  One out 5 are able to create pitches</div>
+                <div class="funding-img-con d-none d-lg-block">
+                  <img class="funding-img" src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/last_img.png">
+                </div>
+              </div>
+          </div>
            </div>
          </div>
       </div>
@@ -194,9 +244,9 @@
               <img class="w-100" loading="lazy" src="assets/svg_content-banner.svg" alt="world-map">
             </div>
             <div class="col-lg-7 pl-md-5">
-              <h2 class="deck-redifine-heading">Redefining Pitch Deck Creation</h2>
-              <p class="deck-redifine-paragraph w-75 d-none d-lg-block">Decks don't get you funded, they get you meetings. 
-                Without meetings, you have no shot at getting funded. Investor meetings get you funded.</p>
+              <h2 class="deck-redifine-heading">Revamping Your Pitch Deck Strategy</h2>
+              <p class="deck-redifine-paragraph w-75 d-lg-block">From Meetings to Funding
+                Pitch decks are the gateway to investor meetings, but it takes more than just a flashy presentation to secure funding. Successful fundraising requires a well-crafted pitch that not only captures investors' attention, but also showcases the strengths of your business and team. By rethinking your pitch deck creation process, you can set yourself up for success and increase your chances of securing the funding you need.</p>
               <button class="get-start-btn primary-color" onclick="location.href='contact-us.html'">
                 Get started
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -277,7 +327,7 @@
               </div>
               <div class="col-md-6">
                  <div class="investor-presentation d-lg-flex">
-                   <img src="https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/invesment_img.png" loading="lazy" alt="investment img">
+                   <img src="assets/presentation-icon.svg" loading="lazy" alt="investment img">
                    <div class="investor-present-sub">
                       <p class="investor-present-title" >You Only Have Few Minutes to Wow the Investors.</p>
                       <button class="get-start-btn primary-color" onclick="location.href='contact-us.html'">
@@ -400,31 +450,33 @@
                   <p class="address-footer">Block 28, Building No. 78, First Floor, West Patel Nagar, New Delhi-110008, India</p>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-2">
+              <div class="col-sm-6 col-lg-3">
                 <div class="footer-menu-list ">
                   <h5>Company</h5>
                   <ul class="menu-list-items-footer list-unstyled">
                     <li>About us</li>
-                    <li>Career</li>
+                    <!-- <li>Career</li> -->
                     <li>Privacy Policy</li>
-                    <li>Contact Us</li>
-                    <li>Blog</li>
+                    <a href="contact-us.html"><li>Contact Us</li></a>
+                    <!-- <li>Blog</li> -->
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-2">
+              <div class="col-sm-6 col-lg-3">
                 <div class="footer-menu-list">
                   <h5>Services</h5>
                   <ul class="menu-list-items-footer list-unstyled">
-                    <li>Pitch Deck</li>
-                    <li>Financial Model And Valuation</li>
-                    <li>Privacy Policy</li>
-                    <li>Business Plan</li>
-                    <li>Accelerate X</li>
+                    <li>One pager website </li>
+                    <li>Digital Marketing</li>
+                    <li>Web development</li>
+                    <li>Management </li>
+                    <li>Investor connect</li>
+                    <li>Founder grooming</li>
+                    <li>Research and development</li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-2">
+              <!-- <div class="col-sm-6 col-lg-2">
                 <div class="footer-menu-list">
                   <h5>Additional Services</h5>
                   <ul class="menu-list-items-footer list-unstyled">
@@ -434,7 +486,7 @@
                     <li>One-pager</li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <div class="col-sm-12 col-lg-3">
                 <div class="social-footer-item">
                   <div class="email-connect-item d-flex align-items-center">

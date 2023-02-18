@@ -1,6 +1,46 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0px;
+}
+a{
+    color: #3476a5;
+}
+a:hover{
+    color: #73b8e8;
+    text-decoration: none;
+}
+
+#service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
+    position: relative;
+}
+.services-dropdown{
+    display: none;
+    color: #3476a5;
+}
+.services-dropdown-con{
+    position: relative;
+}
+#service-dropdown-id:checked ~ label .caret-down, #service-dropdown-id-mob:checked  ~ label .caret-down, .caret-up{
+    display: none;
+}
+
+#service-dropdown-id:checked ~ label .caret-up, #service-dropdown-id-mob:checked  ~ label .caret-up{
+    display: inline;
+}
+#service-dropdown-id:checked ~ label .services-dropdown, #service-dropdown-id-mob:checked  ~ label .services-dropdown{
+    display: block;
+    position: absolute;
+    width: 300px;
+    background: white;
+    border: 1px solid #3476a5;
+    border-radius: 5px;
+    padding: 10px;
+    left: -132px;
+    top: 33px;
+}
+.menu-list-style li{
+    padding: 5px 15px;
+    cursor: pointer;
 }
 @media screen and (min-width: 1300px) {
     .container{
@@ -25,7 +65,7 @@ header.main-header-container{
     background-color: transparent;
     /* background-color: rgba(0, 0, 0,  0.12); */
     backdrop-filter: blur(4px);
-    /* background-color: #eaedef; */
+    background: #dee1e654;
 }
 /* Nav bar start */
 #nav-check-box{
@@ -178,11 +218,12 @@ header.main-header-container{
     margin-bottom: 18px;
 }
 .perk-percentage{
-    background: aliceblue;
+    background: #67a0c8;
     padding: 26px 20px;
     border-radius: 100%;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
+    color: white;
 }
 .perk-percentage.low-perk{
     padding: 26px 26px;
@@ -207,6 +248,8 @@ header.main-header-container{
     font-size: 3.5rem;
     font-weight: 700;
     color: #1B66C9;
+    /* color: #67a0c8; */
+
     margin: 0px;
 }
 .funding-card-info{
