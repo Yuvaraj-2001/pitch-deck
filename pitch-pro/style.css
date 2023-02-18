@@ -313,6 +313,7 @@ header.main-header-container{
 /* Investment Section */
 .investor-deck-container{
     background-color: #d4d6d7;
+    background-color: #3476a5;
     font-size: 16px;
     padding: 60px 0px;
 }
@@ -320,6 +321,7 @@ header.main-header-container{
     font-size: 2rem;
     font-weight: 600;
     padding-right: 80px;
+    color: white;
 }
 .investor-presentation{
     padding: 58px 0px 45px 60px;
@@ -458,7 +460,8 @@ header.main-header-container{
         font-weight: 700;
     }
     .investor-presentation{
-        padding: 25px 0px 25px 20px;
+        padding: 25px 20px 25px 20px;
+        text-align: center;
     }
     .deck-redifine-heading{
         padding-top: 2rem;
