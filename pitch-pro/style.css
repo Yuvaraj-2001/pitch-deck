@@ -448,6 +448,7 @@ header.main-header-container{
     .deck-redifine-paragraph{
         font-size: 1rem;
         font-weight: 800;
+        width: 90%;
     }
     .main-section-intro h1, .first-impress-heading,
     .funding-section-info .funding-title, .deck-redifine-heading{
