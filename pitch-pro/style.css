@@ -30,12 +30,12 @@ a:hover{
 #service-dropdown-id:checked ~ label .services-dropdown, #service-dropdown-id-mob:checked  ~ label .services-dropdown{
     display: block;
     position: absolute;
-    width: 300px;
+    width: 200px;
     background: white;
     border: 1px solid #3476a5;
     border-radius: 5px;
     padding: 10px;
-    left: -132px;
+    left: -75px;
     top: 33px;
 }
 .menu-list-style li{
@@ -226,7 +226,7 @@ header.main-header-container{
     color: white;
 }
 .perk-percentage.low-perk{
-    padding: 26px 26px;
+    padding: 26px 29px;
 }
 .percentage-brief-section{
     padding: 45px 0px;
@@ -284,6 +284,7 @@ header.main-header-container{
     line-height: 1.5rem; 
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+    width: 90%;
 }
 
 /* First Impresstion */
@@ -448,7 +449,7 @@ header.main-header-container{
     .deck-redifine-paragraph{
         font-size: 1rem;
         font-weight: 800;
-        width: 90%;
+        width: 95% !important;
     }
     .main-section-intro h1, .first-impress-heading,
     .funding-section-info .funding-title, .deck-redifine-heading{
@@ -461,6 +462,7 @@ header.main-header-container{
     }
     .deck-redifine-heading{
         padding-top: 2rem;
+        text-align: center;
         padding-bottom: 1rem;
     }
     .section-redifine-content{
