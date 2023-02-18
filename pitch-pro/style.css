@@ -373,7 +373,9 @@ header.main-header-container{
     margin-top: 20px;
     margin-bottom: 2rem;
 }
-
+#spin-on{
+    display: none;
+}
 @media screen and  (max-width: 425px) {
     .container{
         padding: 0px 20px;
