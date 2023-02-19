@@ -38,6 +38,15 @@ a:hover{
     left: -75px;
     top: 33px;
 }
+.dropdown-video{
+    width: 100vw;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    height: 100vh;
+    object-fit: cover;
+    transition: all .5s;
+}
 .menu-list-style li{
     padding: 5px 15px;
     cursor: pointer;
@@ -82,9 +91,10 @@ header.main-header-container{
     text-align: center;
     transition: all .5s;
 }
-#nav-check-box:checked ~ .navigation-panel{
+#nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
     left: 0;
 }
+
 #nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
     display: none;
 }
@@ -93,6 +103,7 @@ header.main-header-container{
 }
 .list-menu-mobile{
     padding-top: 30px;
+    position: relative;
 }
 .list-menu-mobile.menu-list-style li{
     padding: 15px 15px;
@@ -462,6 +473,7 @@ header.main-header-container{
     .investor-presentation{
         padding: 25px 20px 25px 20px;
         text-align: center;
+        margin-top: 50px;
     }
     .deck-redifine-heading{
         padding-top: 2rem;

@@ -9,6 +9,15 @@ a:hover{
     color: #73b8e8;
     text-decoration: none;
 }
+.dropdown-video{
+    width: 100vw;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    height: 100vh;
+    object-fit: cover;
+    transition: all .5s;
+}
 
 #service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
     position: relative;
@@ -166,9 +175,10 @@ header.main-header-container{
     text-align: center;
     transition: all .5s;
 }
-#nav-check-box:checked ~ .navigation-panel{
+#nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
     left: 0;
 }
+
 #nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
     display: none;
 }
@@ -177,6 +187,7 @@ header.main-header-container{
 }
 .list-menu-mobile{
     padding-top: 30px;
+    position: relative;
 }
 .list-menu-mobile li{
     padding: 15px 15px;
