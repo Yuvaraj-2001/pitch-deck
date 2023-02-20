@@ -1,0 +1,193 @@
+/* Main Header and Navigation section start */
+header.main-header-container{
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+    height: 72px;
+    background-color: transparent;
+    /* background-color: rgba(0, 0, 0,  0.12); */
+    backdrop-filter: blur(4px);
+    background: #dee1e654;
+}
+.menu-items{
+    margin-top: 20px;
+}
+.menu-items li{
+    color: #3476a5;
+}
+.menu-list-style li{
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.list-menu-mobile.menu-list-style li{
+    padding: 15px 15px;
+    color: #fff;
+}
+.services-dropdown-con{
+    position: relative;
+}
+#service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
+    position: relative;
+}
+#service-dropdown-id:checked ~ label .caret-down, #service-dropdown-id-mob:checked  ~ label .caret-down, .caret-up{
+    display: none;
+}
+
+#service-dropdown-id:checked ~ label .caret-up, #service-dropdown-id-mob:checked  ~ label .caret-up{
+    display: inline;
+}
+#service-dropdown-id:checked ~ label .services-dropdown{
+    display: block;
+    position: absolute;
+    width: 200px;
+    background: white;
+    border: 1px solid #3476a5;
+    border-radius: 5px;
+    padding: 10px;
+    left: -75px;
+    top: 33px;
+}
+#service-dropdown-id-mob:checked  ~ label .services-dropdown{
+    display: block;
+    position: absolute;
+    width: 300px;
+    background: white;
+    border: 1px solid #3476a5;
+    border-radius: 5px;
+    padding: 10px;
+    left: -110px;
+    top: 33px;
+}
+.services-dropdown{
+    display: none;
+    color: #3476a5;
+}
+.primary-color{
+    background: #fff;
+    background: #3476a5;
+    border: none;
+    color: #fff;
+}
+.primary-color:hover{
+    background: #4298d4;
+    color: #fff;
+}
+#nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
+    display: none;
+}
+#nav-check-box:checked ~ .cross-nav-con{
+    display: block;
+}
+#nav-check-box{
+    display: none;
+}
+.navigation-panel{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #789db7;
+    top: 72px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+.dropdown-video{
+    width: 100vw;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    height: 100vh;
+    object-fit: cover;
+    transition: all .5s;
+} 
+#nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
+    left: 0;
+}
+.list-menu-mobile{
+    padding-top: 30px;
+    position: relative;
+}
+.list-menu-mobile.menu-list-style li{
+    padding: 15px 15px;
+    color: #fff;
+}
+.list-menu-mobile a{
+    color: #fff;
+}
+.list-menu-mobile a:hover{
+    color: #000;
+}
+.pitch-pro-logo{
+    width: 196px;
+    /* margin-left: -4%; */
+    position: absolute;
+    left: 5%;
+}
+/* Mobile View main section */
+@media screen and (max-width: 970px) {
+    header.main-header-container{
+        background-color: #eaedef;
+        display: flex;
+        align-items: center;
+    }
+    .pitch-pro-logo{
+        width: 150px;
+    }
+}
+
+/* Main Header and Navigation End */
+
+/* Footer Main Start */
+.pitch-pro-common-footer{
+    font-size: 16px;
+    padding-top: 4rem;
+}
+.pitch-pro-footer-logo{
+    width: 200px;
+    margin-left: -3%;
+    margin-top: -10%;
+}
+.pitch-pro-common-footer{
+    font-size: 16px;
+    padding-top: 4rem;
+}
+
+.address-footer{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.footer-menu-list h5{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.menu-list-items-footer{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.menu-list-items-footer li{
+    padding: 4px 0px;
+    cursor: pointer;
+}
+.email-connect-svg{
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+.phone-connect-svg{
+    padding-right: 10px;
+}
+.phone-connect-item{
+    background: aliceblue;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #3476a5;
+    text-decoration: none;
+    background-color: transparent;
+}
+/* Footer Main End */

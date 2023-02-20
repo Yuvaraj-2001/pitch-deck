@@ -10,17 +10,17 @@ a:hover{
     text-decoration: none;
 }
 
-#service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
+/* #service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
     position: relative;
 }
 .services-dropdown{
     display: none;
     color: #3476a5;
-}
-.services-dropdown-con{
+} */
+/* .services-dropdown-con{
     position: relative;
-}
-#service-dropdown-id:checked ~ label .caret-down, #service-dropdown-id-mob:checked  ~ label .caret-down, .caret-up{
+} */
+/* #service-dropdown-id:checked ~ label .caret-down, #service-dropdown-id-mob:checked  ~ label .caret-down, .caret-up{
     display: none;
 }
 
@@ -37,8 +37,8 @@ a:hover{
     padding: 10px;
     left: -75px;
     top: 33px;
-}
-.dropdown-video{
+} */
+/* .dropdown-video{
     width: 100vw;
     position: fixed;
     left: -100%;
@@ -46,7 +46,7 @@ a:hover{
     height: 100vh;
     object-fit: cover;
     transition: all .5s;
-}
+} */
 .menu-list-style li{
     padding: 5px 15px;
     cursor: pointer;
@@ -60,22 +60,22 @@ a:hover{
     position: relative;
     margin-top: -72px;
 }
-.menu-items{
+/* .menu-items{
     margin-top: 20px;
 }
 .menu-items li{
     color: #3476a5;
-}
-header.main-header-container{
+} */
+/* header.main-header-container{
     position: sticky;
     top: -1px;
     z-index: 2;
     height: 72px;
     background-color: transparent;
-    /* background-color: rgba(0, 0, 0,  0.12); */
+    /* background-color: rgba(0, 0, 0,  0.12); 
     backdrop-filter: blur(4px);
     background: #dee1e654;
-}
+} */
 /* Nav bar start */
 #nav-check-box{
     display: none;
@@ -95,12 +95,12 @@ header.main-header-container{
     left: 0;
 }
 
-#nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
+/* #nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
     display: none;
-}
-#nav-check-box:checked ~ .cross-nav-con{
+} */
+/* #nav-check-box:checked ~ .cross-nav-con{
     display: block;
-}
+} */
 .list-menu-mobile{
     padding-top: 30px;
     position: relative;
@@ -155,11 +155,11 @@ header.main-header-container{
     .pitch-pro-logo{
         width: 150px;
     }
-    header.main-header-container{
+    /* header.main-header-container{
         background-color: #eaedef;
         display: flex;
         align-items: center;
-    }
+    } */
     .funding-section-info .funding-title{
         max-width: 100% !important;
     }
@@ -488,7 +488,11 @@ header.main-header-container{
     }
     .investor-deck-title{
         font-size: 1.5rem;
+        text-align: center;
+        padding: 0px;
+        padding-top: 15px;
     }
+    
     .investor-present-title{
         font-size: 1.2rem;
     }
