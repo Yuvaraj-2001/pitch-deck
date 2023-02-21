@@ -117,3 +117,11 @@ function dsdasd(){
   // xhttp.open("GET", "//localhost:8000/pitchpro", true);
   xhttp.send();
 }
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-NQZF99DXD2');
