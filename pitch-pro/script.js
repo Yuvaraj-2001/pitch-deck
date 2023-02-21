@@ -119,8 +119,6 @@ function dsdasd(){
 }
 
 window.dataLayer = window.dataLayer || [];
-gtag('js', new Date());
-gtag('config', 'G-NQZF99DXD2');
 
 function onLoadDataLayer(){
   dataLayer.push({
@@ -130,4 +128,8 @@ function onLoadDataLayer(){
     'event': 'User Load'
   });
 }
-onLoadDataLayer();
+setTimeout(function(){
+  onLoadDataLayer();
+  gtag('js', new Date());
+  gtag('config', 'G-NQZF99DXD2');
+}, 1000)
