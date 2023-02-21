@@ -119,17 +119,20 @@ function dsdasd(){
 }
 
 window.dataLayer = window.dataLayer || [];
+function gtag(){
+ dataLayer(arguments);
+}
 
 function onLoadDataLayer(){
   dataLayer.push({
     'color': 'red',
     'time': +new Date(),
     'conversionValue': 50,
-    'event': 'User Load'
+    'event': 'user_load'
   });
 }
 setTimeout(function(){
   onLoadDataLayer();
-  gtag('js', new Date());
-  gtag('config', 'G-NQZF99DXD2');
+  // gtag('js', new Date());
+  // gtag('config', 'G-NQZF99DXD2');
 }, 1000)
