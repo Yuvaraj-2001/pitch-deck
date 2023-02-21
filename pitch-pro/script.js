@@ -133,6 +133,6 @@ function onLoadDataLayer(){
 }
 setTimeout(function(){
   onLoadDataLayer();
-  // gtag('js', new Date());
-  // gtag('config', 'G-NQZF99DXD2');
+  gtag('js', new Date());
+  gtag('config', 'G-NQZF99DXD2');
 }, 1000)
