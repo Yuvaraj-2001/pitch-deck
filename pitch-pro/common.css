@@ -50,12 +50,12 @@ header.main-header-container{
 #service-dropdown-id-mob:checked  ~ label .services-dropdown{
     display: block;
     position: absolute;
-    width: 300px;
+    width: 220px;
     background: white;
     border: 1px solid #3476a5;
     border-radius: 5px;
     padding: 10px;
-    left: -110px;
+    left: -30px;
     top: 33px;
 }
 .services-dropdown{
@@ -86,22 +86,25 @@ header.main-header-container{
     width: 100%;
     height: 100vh;
     background: #789db7;
-    top: 72px;
+    top: 0px;
     left: -100%;
     text-align: center;
     transition: all .5s;
 }
 .dropdown-video{
-    width: 100vw;
+    width: 75vw;
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 0px;
     height: 100vh;
     object-fit: cover;
-    transition: all .5s;
+    transition: all .3;
 } 
-#nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
-    left: 0;
+#nav-check-box:checked ~ .navigation-panel{
+    left: -25%;
+}
+#nav-check-box:checked ~ .navigation-panel .dropdown-video{
+    left: 0%;
 }
 .list-menu-mobile{
     padding-top: 30px;

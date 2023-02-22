@@ -81,7 +81,7 @@ a:hover{
     display: none;
 }
 
-.navigation-panel{
+/* .navigation-panel{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -90,10 +90,10 @@ a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
-}
-#nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
+} */
+/* #nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
     left: 0;
-}
+} */
 
 /* #nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
     display: none;
