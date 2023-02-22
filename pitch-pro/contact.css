@@ -9,44 +9,10 @@ a:hover{
     color: #73b8e8;
     text-decoration: none;
 }
-.dropdown-video{
-    width: 100vw;
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    height: 100vh;
-    object-fit: cover;
-    transition: all .5s;
-}
 
-#service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
-    position: relative;
-}
-.services-dropdown{
-    display: none;
-    color: #3476a5;
-}
-.services-dropdown-con{
-    position: relative;
-}
-#service-dropdown-id:checked ~ label .caret-down, #service-dropdown-id-mob:checked  ~ label .caret-down, .caret-up{
-    display: none;
-}
 
-#service-dropdown-id:checked ~ label .caret-up, #service-dropdown-id-mob:checked  ~ label .caret-up{
-    display: inline;
-}
-#service-dropdown-id:checked ~ label .services-dropdown, #service-dropdown-id-mob:checked  ~ label .services-dropdown{
-    display: block;
-    position: absolute;
-    width: 300px;
-    background: white;
-    border: 1px solid #3476a5;
-    border-radius: 5px;
-    padding: 10px;
-    left: -132px;
-    top: 33px;
-}
+
+
 .menu-list-style li{
     padding: 5px 15px;
     cursor: pointer;
@@ -62,12 +28,7 @@ a:hover{
 #intro-video-mobile{
     width: 100%;
 }
-.menu-items{
-    margin-top: 20px;
-}
-.menu-items li{
-    color: #3476a5;
-}
+
 .pitch-pro-logo{
     width: 196px;
     /* margin-left: -4%; */
@@ -114,11 +75,7 @@ header.main-header-container{
     .pitch-pro-logo{
         width: 150px;
     }
-    header.main-header-container{
-        background-color: #eaedef;
-        display: flex;
-        align-items: center;
-    }
+
     .perk-percentage-con{
         margin-bottom: 20px;
     }
@@ -165,26 +122,7 @@ header.main-header-container{
     display: none;
 }
 
-.navigation-panel{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #789db7;
-    top: 72px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-}
-#nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
-    left: 0;
-}
 
-#nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
-    display: none;
-}
-#nav-check-box:checked ~ .cross-nav-con{
-    display: block;
-}
 .list-menu-mobile{
     padding-top: 30px;
     position: relative;
