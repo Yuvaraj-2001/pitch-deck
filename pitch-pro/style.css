@@ -101,20 +101,7 @@ a:hover{
 /* #nav-check-box:checked ~ .cross-nav-con{
     display: block;
 } */
-.list-menu-mobile{
-    padding-top: 30px;
-    position: relative;
-}
-.list-menu-mobile.menu-list-style li{
-    padding: 15px 15px;
-    color: #fff;
-}
-.list-menu-mobile a{
-    color: #fff;
-}
-.list-menu-mobile a:hover{
-    color: #000;
-}
+
 /* Nav bar End */
 
 .header-menu-font{
