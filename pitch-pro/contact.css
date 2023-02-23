@@ -11,12 +11,6 @@ a:hover{
 }
 
 
-
-
-.menu-list-style li{
-    padding: 5px 15px;
-    cursor: pointer;
-}
 @media screen and (min-width: 1300px) {
     .container{
         max-width: 1250px;
@@ -29,22 +23,6 @@ a:hover{
     width: 100%;
 }
 
-.pitch-pro-logo{
-    width: 196px;
-    /* margin-left: -4%; */
-    position: absolute;
-    left: 5%;
-}
-.primary-color{
-    background: #fff;
-    background: #3476a5;
-    border: none;
-    color: #fff;
-}
-.primary-color:hover{
-    background: #4298d4;
-    color: #fff;
-}
 .menu-list-style > li{
     padding: 5px 15px;
 }
@@ -57,23 +35,11 @@ a:hover{
     padding: 5px 15px;
     cursor: pointer;
 }
-header.main-header-container{
-    position: sticky;
-    top: -1px;
-    z-index: 2;
-    height: 72px;
-    background-color: #3476a54d;
-    /* background-color: rgba(0, 0, 0,  0.12); */
-    backdrop-filter: blur(4px);
-    /* background-color: #eaedef; */
-}
+
 
 @media screen and (max-width: 970px) {
     .pitch-pro-common-preview{
         margin-top: 0px;
-    }
-    .pitch-pro-logo{
-        width: 150px;
     }
 
     .perk-percentage-con{
@@ -123,20 +89,7 @@ header.main-header-container{
 }
 
 
-.list-menu-mobile{
-    padding-top: 30px;
-    position: relative;
-}
-.list-menu-mobile li{
-    padding: 15px 15px;
-    color: #fff;
-}
-.list-menu-mobile a{
-    color: #fff;
-}
-.list-menu-mobile a:hover{
-    color: #000;
-}
+
 /* Nav bar End */
 
 
