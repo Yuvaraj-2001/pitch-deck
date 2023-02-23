@@ -206,4 +206,15 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+.wa-us-container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.wa-us-call{
+    padding: 13px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px -3px;
+}
 /* Footer Main End */
