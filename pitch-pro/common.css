@@ -106,7 +106,7 @@ header.main-header-container{
     top: 0px;
     height: 100vh;
     object-fit: cover;
-    transition: all .3;
+    transition: all 0.75s;
 } 
 #nav-check-box:checked ~ .navigation-panel{
     left: -25%;
