@@ -1,3 +1,7 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+}
 /* Main Header and Navigation section start */
 header.main-header-container{
     position: sticky;
@@ -216,5 +220,9 @@ a {
     background: #fff;
     border-radius: 100%;
     box-shadow: 0px 0px 10px -3px;
+}
+.connection-wrap{
+    color: #000;
+    text-decoration: none;
 }
 /* Footer Main End */
