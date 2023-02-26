@@ -216,12 +216,12 @@ a:hover{
     margin-bottom: 18px;
 }
 .perk-percentage{
-    background: #67a0c8;
+    background: #3476a5;
     padding: 26px 20px;
     border-radius: 100%;
     font-size: 30px;
     font-weight: 900;
-    color: white;
+    color: #fff;
 }
 .perk-percentage.low-perk{
     padding: 26px 29px;
