@@ -119,9 +119,6 @@ function dsdasd(){
 }
 
 window.dataLayer = window.dataLayer || [];
-function gtag(){
- dataLayer(arguments);
-}
 
 function onLoadDataLayer(){
   dataLayer.push({
@@ -133,6 +130,6 @@ function onLoadDataLayer(){
 }
 setTimeout(function(){
   onLoadDataLayer();
-  gtag('js', new Date());
-  gtag('config', 'G-NQZF99DXD2');
+  // dataLayer('js', new Date());
+  // dataLayer('config', 'G-NQZF99DXD2');
 }, 1000)
