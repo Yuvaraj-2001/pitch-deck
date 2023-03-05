@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pitch Pro to Raise Funds.">
+    <title>Pitch Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="common.css" />
+    <style>
+     .privacy-policy-section-header{
+        background-color: #d2d4d5;
+        padding: 30px 0px;
+     }
+     .priv-pol-header-con h1{
+        font-weight: 700;
+        font-size: 56px;
+     }
+     .priv-bold{
+        font-size: 28px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+     }
+     .priv-light{
+        margin-bottom: 10px;
+        font-size: 18px;
+     }
+    </style>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P5M34BT');</script>
+  <!-- End Google Tag Manager -->
+  
+</head>
+
+<body>
+<header class="main-header-container">
+    <img src="assets/pitchProLogo.svg" onclick="location.href='index.html'" class="pitch-pro-logo" alt="company logo"/>
+    <div class="container">
+        <div class="w-100 d-flex align-items-center justify-content-end">
+        <div class="menu-items">
+            <ul class="list-unstyled d-none d-lg-block menu-list-style">
+                <a href="index.html" title="Pitch pro home page"><li class="d-inline">Home</li></a>
+                <a href="about-us.html" title="Pitch pro about page"><li class="d-inline">About Us</li></a>
+            <li class="d-inline services-dropdown-con">
+                <input type="checkbox" class="d-none" id="service-dropdown-id" value="0" >
+                <label for="service-dropdown-id">
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-down" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-up" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                </svg>
+                <div class="services-dropdown list-unstyled">
+                    <div class="services-dropdown-list">Pitch deck and Startup Financials</div>
+                    <div class="services-dropdown-list">One pager website</div>
+                    <div class="services-dropdown-list">Digital Marketing</div>
+                    <div class="services-dropdown-list">Web development</div>
+                    <div class="services-dropdown-list">Management consultanting</div>
+                    <div class="services-dropdown-list">Founder grooming</div>
+                    <div class="services-dropdown-list">Research and development</div>
+                </div>
+            </li>
+            <a href="about-us.html" title="Pitch pro about page"><li class="d-inline">Why we?</li></a>
+            <li class="d-inline contact ">
+                <a class="btn btn-primary primary-color" href="contact-us.html" title="Pitch pro contact page">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+
+        <nav class="d-lg-none">
+            <input type="checkbox" id="nav-check-box" value="0">
+            <label for="nav-check-box" class="three-nav-con">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#3476a5" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            </label>
+            <label for="nav-check-box" class="cross-nav-con">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#3476a5" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+            </svg>
+            </label>
+            <div class="navigation-panel">
+            <video autoplay muted loop class="dropdown-video">
+                <source src="assets/side-menu.mp4" loading="lazy" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <ul class="list-unstyled menu-list-style list-menu-mobile">
+                <a href="index.html" title="Pitch pro home page"><li>Home</li></a>
+                <a href="about-us.html" title="Pitch pro about page"><li>About Us</li></a>
+            <li class="d-block services-dropdown-con">
+                <input type="checkbox" class="d-none" id="service-dropdown-id-mob" value="0" >
+                <label for="service-dropdown-id-mob">
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-down" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="caret-up" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                </svg>
+                </label>
+                <div class="services-dropdown list-unstyled">
+                    <div class="services-dropdown-list">Pitch deck and Startup Financials</div>
+                    <div class="services-dropdown-list">One pager website</div>
+                    <div class="services-dropdown-list">Digital Marketing</div>
+                    <div class="services-dropdown-list">Web development</div>
+                    <div class="services-dropdown-list">Management consultanting</div>
+                    <div class="services-dropdown-list">Investor connect</div>
+                    <div class="services-dropdown-list">Founder grooming</div>
+                    <div class="services-dropdown-list">Research and development</div>
+                </div>
+
+            </li>
+            <a href="about-us.html" title="Page about why we?"><li>Why we?</li></a>
+            <li class="contact">
+                <a class="btn btn-primary primary-color" title="Page about Contact us" href="contact-us.html">Contact Us</a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+        </div>
+    </div>
+</header>
+<section class="privacy-policy-section-header">
+    <div class="container">
+        <div class="priv-pol-header-con">
+            <h1>Privacy Policy</h1>
+        </div>
+    </div>
+</section>
+
+<section class="privacy-policy-content">
+    <div class="container">
+        <h2 class="priv-bold"></h2>
+        <p class="priv-light">
+            At pitchkrafts, accessible from https://pitchkrafts.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by pitchkrafts and how we use it.
+        </p>
+        <p class="priv-light">
+            If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+        </p>
+        <p class="priv-light">
+            This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in pitchkrafts. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the Free Privacy Policy Generator.
+        </p>
+        <h2 class="priv-bold">Consent</h2>
+        <p class="priv-light">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+        <h2 class="priv-bold">Information we collect</h2>
+        <p class="priv-light">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+        <p class="priv-light">If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+        <p class="priv-light">When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+       
+        <h2 class="priv-bold">How we use your information</h2>
+        <p class="priv-light">We use the information we collect in various ways, including to:</p>
+        <ul class="list-unstyled">
+            <li>Provide, operate, and maintain our website</li>
+            <li>Improve, personalize, and expand our website</li>
+            <li>Understand and analyze how you use our website</li>
+            <li>Develop new products, services, features, and functionality</li>
+            <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to</li>
+            <li>the website, and for marketing and promotional purposes</li>
+            <li>Send you email</li>
+            <li>Find and prevent fraud</li>
+        </ul>
+
+
+        <h2 class="priv-bold">Log Files
+        </h2>
+        <p class="priv-light">
+            pitchkrafts follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.
+        </p>
+
+        <h2 class="priv-bold">Log Advertising Partners Privacy Policies
+        </h2>
+        <p class="priv-light">You may consult this list to find the Privacy Policy for each of the advertising partners of pitchkrafts.</p>
+        <p class="priv-light">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on pitchkrafts, which are sent directly to users’ browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+        <p class="priv-light">Note that pitchkrafts has no access to or control over these cookies that are used by third-party advertisers.</p>
+
+        <h2 class="priv-bold">Third Party Privacy Policies
+        </h2>
+        <p class="priv-light">pitchkrafts’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.</p>
+        <p class="priv-light">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites.
+          </p>
+      
+
+        <h2 class="priv-bold">CCPA Privacy Rights (Do Not Sell My Personal Information)
+        </h2>
+        <p class="priv-light">Under the CCPA, among other rights, California consumers have the right to:</p>
+        <p class="priv-light">Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+        <p class="priv-light">Request that a business delete any personal data about the consumer that a business has collected.</p>
+        <p class="priv-light">Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data.</p>
+        <p class="priv-light">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+        
+        <h2 class="priv-bold">GDPR Data Protection Rights</h2>
+        <p class="priv-light">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+        <p class="priv-light">The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+        <p class="priv-light">The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+        <p class="priv-light">The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+        <p class="priv-light">The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+        <p class="priv-light">The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+        <p class="priv-light">The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+        <p class="priv-light">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+    
+        <h2 class="priv-bold">Children’s Information</h2>
+        <p class="priv-light">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+        <p class="priv-light">pitchkrafts does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+    </div>
+</section>
+
+<footer class="pitch-pro-common-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3">
+              <div class="footer-logo">
+                <img src="assets/pitchProLogo.svg" class="pitch-pro-footer-logo" alt="">
+                <p class="address-footer">Block 28, Building No. 78, First Floor, West Patel Nagar, New Delhi-110008, India</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-menu-list ">
+                <h5>Company</h5>
+                <ul class="menu-list-items-footer list-unstyled">
+                    <a href="about-us.html" title="about us page"><li>About us</li></a>
+                  <!-- <li>Career</li> -->
+                  <a href="privacy-policy.html" title="privacy policy page"><li>Privacy Policy</li></a>
+                  <a href="contact-us.html" title="about contact us page"><li>Contact Us</li></a>
+                  <!-- <li>Blog</li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-menu-list">
+                <h5>Services</h5>
+                <ul class="menu-list-items-footer list-unstyled">
+                  <li>One pager website </li>
+                  <li>Digital Marketing</li>
+                  <li>Web development</li>
+                  <li>Management consultanting</li>
+                  <li>Investor connect</li>
+                  <li>Founder grooming</li>
+                  <li>Research and development</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6 col-lg-2">
+              <div class="footer-menu-list">
+                <h5>Additional Services</h5>
+                <ul class="menu-list-items-footer list-unstyled">
+                  <li>Presentation Design</li>
+                  <li>Investment Memo</li>
+                  <li>Sales Deck</li>
+                  <li>One-pager</li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="col-sm-12 col-lg-3">
+              <div class="social-footer-item">
+                <div class="email-connect-item d-flex align-items-center">
+                  <div class="email-connect-svg primary-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                  </div>
+                  <div class="connection-wrap">
+                    <div>Connect at</div>
+                    <div>Business@pitchkrafts.com</div>
+                  </div>
+                </div>
+  
+                <div class="phone-connect-item d-flex align-items-center">
+                  <div class="phone-connect-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                  </div>
+                  <a href="tel:9717976576" title="Contact Number">
+                    <div class="connection-wrap">
+                      <div>Connect us</div>
+                      <div>+91 97179 76576</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+  
+            </div>
+        </div>
+    </div>
+  
+   <div class="wa-us-container">
+    <div class="wa-us-call">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4fce50" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+      </svg>
+    </div>
+   </div>
+  </footer>
+</body>
+</html>
