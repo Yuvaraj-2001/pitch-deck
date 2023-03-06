@@ -1,0 +1,5 @@
+
+# robots.txt for pitch pro
+user-agent: *
+Disallow: admin.html
+Sitemap: https://yuvaraj-2001.github.io/pitch-pro/sitemap.xml
