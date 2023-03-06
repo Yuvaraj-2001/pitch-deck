@@ -1,817 +1,508 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0px;
 }
-.pitch-con{
-    max-width: 1280px;
-    margin: 0px;
-    margin-right: auto;
-    margin-left: auto;
+a{
+    color: #3476a5;
 }
-li{
-    list-style: none;
+a:hover{
+    color: #73b8e8;
+    text-decoration: none;
 }
-.contact-top-header{
-    text-align: right;
+
+/* #service-dropdown-id ~ label, #service-dropdown-id-mob ~ label {
+    position: relative;
+}
+.services-dropdown{
+    display: none;
+    color: #3476a5;
+} */
+/* .services-dropdown-con{
+    position: relative;
+} */
+/* #service-dropdown-id:checked ~ label .caret-down, #service-dropdown-id-mob:checked  ~ label .caret-down, .caret-up{
+    display: none;
+}
+
+#service-dropdown-id:checked ~ label .caret-up, #service-dropdown-id-mob:checked  ~ label .caret-up{
+    display: inline;
+}
+#service-dropdown-id:checked ~ label .services-dropdown, #service-dropdown-id-mob:checked  ~ label .services-dropdown{
+    display: block;
+    position: absolute;
+    width: 200px;
+    background: white;
+    border: 1px solid #3476a5;
+    border-radius: 5px;
+    padding: 10px;
+    left: -75px;
+    top: 33px;
+} */
+/* .dropdown-video{
+    width: 100vw;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    height: 100vh;
+    object-fit: cover;
+    transition: all .5s;
+} */
+.menu-list-style li{
+    padding: 5px 15px;
+    cursor: pointer;
+}
+@media screen and (min-width: 1300px) {
+    .container{
+        max-width: 1250px;
+    }
+}
+.pitch-pro-common-preview{
+    position: relative;
+    margin-top: -72px;
+}
+/* .menu-items{
+    margin-top: 20px;
+}
+.menu-items li{
+    color: #3476a5;
+} */
+/* header.main-header-container{
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+    height: 72px;
+    background-color: transparent;
+    /* background-color: rgba(0, 0, 0,  0.12); 
     backdrop-filter: blur(4px);
-    background-color: #124dd9;
+    background: #dee1e654;
+} */
+/* Nav bar start */
+#nav-check-box{
+    display: none;
 }
-.contact-top-header ul{
+
+/* .navigation-panel{
+    position: fixed;
     width: 100%;
-    margin: 0px;
-    margin-right: auto;
-    max-width: 1280px;
-    margin-left: auto;
-    text-align: right;
-    padding: 15px 0px;
-    gap: 30px
-}
-/* Font styles */
+    height: 100vh;
+    background: #789db7;
+    top: 72px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+} */
+/* #nav-check-box:checked ~ .navigation-panel, #nav-check-box:checked ~ .navigation-panel .dropdown-video{
+    left: 0;
+} */
+
+/* #nav-check-box:checked ~ .three-nav-con, .cross-nav-con{
+    display: none;
+} */
+/* #nav-check-box:checked ~ .cross-nav-con{
+    display: block;
+} */
+
+/* Nav bar End */
+
 .header-menu-font{
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
+    padding-left: 10px;
+    line-height: 1.2rem;
+    color: #fff; 
 }
-/* common display */
-.dis-flex{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-}
-.jus-c-end{
-    justify-content: end;
-}
-.pitch-deck-header-container{
-    position: static;
-}
-.pitch-conent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.pitch-conent img{
-    height: 26px;
-    width: 161px;
-}
-.header-menu-flex{
-    display: flex;
-    display: flex;
-    gap: 60px;
-    align-items: center;
-}
-
-.home-main-banner{
-    background-image: url('https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/homepage_banner.png');
-    padding-top: 160px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -80px;
-    padding-bottom: 60px;
-}
-.intro-title{
-    margin-top: 19px;
-    font-weight: 700;
-    font-size: 47px;
-    color: white;
-    line-height: 48px;
-    margin-bottom: 0px;
-}
-.intro-title-paragraph{
-    max-width: 664px;
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 23px;
-    color: #fff;
-}
-
-.main-home-btn-container{
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 100px;
-}
-.btn-know-us{
-    border-radius: 50px;
-    padding: 3px 28px;
-    background: transparent;
-    border: 2px solid #fff;
-    line-height: 36px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-}
-.btn-started{
-    background: #fff;
-    color: #292929;
-    padding: 5px 19px 5px 28px;
-    border-radius: 50px;
-    line-height: 36px;
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-
-}
-
-.pitch-perk-main{
-    padding: 45px 0px;
-    padding: 45px 0px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.service_item{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.service_name > h5{
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 24px;
-}
-.service_item > .service_img{
-    background: aliceblue;
-    padding: 26px;
-    border-radius: 100%;
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.section_title_center{
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 58px;
-    color: #212529;
-    margin-top: 80px;
-}
-
-.deck-card-container{
-    padding-top: 80px;
-    display: flex;
-    gap: 30px;
-}
-.deck-card{
-    background: #EBEBEB;
-    padding: 20px 30px;
-    border-radius: 28px;
-    flex-basis: 50%;
-}
-.two_col_area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.two_col_area > .first_img{
-    font-size: 55px;
-    font-weight: 700;
-    color: #1B66C9;
-}
-
-.two_col_area > .page_title_desc{
-    line-height: 32px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    width: 55%;
-}
-.section_banner{
-    margin-top: 80px;
-}
-
-.section_banner .container_inner {
-    background-image: url('https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/world_banner.png');
-    border-radius: 30px;
-    padding: 50px 70px;
-    background-size: cover;
-}
-
-.redifined-pitch-container{
-    display: flex;
-    gap: 70px;
-}
-.redifined-pitch-container img {
-    width: 450px;
-}
-.redifine-heading{
-    text-align: start;
-    font-weight: 600;
-    font-size: 46px;
-    line-height: 45px;
-    margin-bottom: 20px;
-}
-
-.section_title_desc{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
-    max-width: 610px;
-    margin: 15px 0 31px;
-    color: #212529;
-}
-
-.col-blue{
-    background-color: #1B66CA;
-    color: white;
-    border: none;
-}
-.first-impression{
-    padding-top: 140px;
-    padding-bottom: 100px;
-}
-
-.img-ser-grid > img{
-    width: 70px;
-}
-.impression-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 50px;
-    padding-top: 50px;
-}
-
-.ind-ser-container .service_item{
-  justify-content: center;
-}
-
-.service_name > h5{
-    max-width: 180px;
-}
-
-.section-investment{
-    background-image: url('https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/invesment_banner.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 60px 0;
-}
-.investor-container{
-    display: flex;
-    justify-content: space-between;
-}
-.section_title_sm{
-    font-size: 30px;
-    line-height: 37px;
-    font-weight: 600;
-    max-width: 480px;
-}
-.presentation-con{
-    display: flex;
-    padding: 58px 0 0 50px;
-    background: #fff;
-    border-radius: 30px;
-    gap: 40px;
-    padding-bottom: 40px;
-}
-.presentation-con .section_title_sm{
-    margin: 0px;
-    padding-bottom: 20px;
-} 
-.btn-primary {
-    background-color: #1B66CA;
-    border-radius: 50px;
-    padding: 8px 28px;
-    line-height: 36px;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    border: none;
-    color: #fff;
-}
-.desc_team-container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 100px;
-}
-.desc_team-container .projects_list{
-    display: flex;
-    gap: 40px;
-    padding-top: 22px;
-}
-
-.desc_team-container .section_title{
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 53px;
-    max-width: 542px;
-    margin-bottom: 38px;
-    color: #212529;
-}
-.featured{
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-.testi-container{
-    padding: 50px 0px;
-    background: #DBEBF9;
-    border-radius: 30px;
-    margin-top: 40px;
-}
-
-.testi-content > h2{
-    font-size: 47px;
-    font-weight: 600;
-    text-align: center;
-}
-.user-testi-container{
-    display: flex;
-    justify-content: center;
-}
-.user-section-testi{
-    margin-right: 51px;
-    width: 460px;
-}
-
-.arrow-left-test{
-    background: #1b66ca;
-    border-radius: 150px;
-    width: 50px;
-    height: 50px;
-    left: 50px;
-    display: flex;
-    top: 50%;
-    align-items: center;
-    padding: 20px;
-    justify-content: center;
-}
-.arrow-right-test{
-    background: #1b66ca;
-    border-radius: 150px;
-    width: 50px;
-    height: 50px;
-    right: 50px;
-    display: flex;
-    top: 50%;
-    align-items: center;
-    padding: 20px;
-    justify-content: center;
-}
-
-.projects_inner .section_title_sm {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center !important;
-    margin: auto;
+.contact-us{
     margin-top: 10px;
 }
-
-.owl-stage-corosol{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.main-section-intro{
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
-
-.projects_inner{
-    margin-top: 30px;
+.pitch-pro-logo{
+    width: 196px;
+    /* margin-left: -4%; */
+    position: absolute;
+    left: 5%;
 }
-
-.contact-container{
-    background-image: url(../images/form_banner.png);
+#intro-video{
+    width: 100%;
+}
+#intro-video-mobile{
+    width: 100%;
+}
+.contact-top-header{
+    background-color: #124dd9;
+    padding: 10px 0px;
+    height: 50px;
+}
+/* Mobile View main section */
+@media screen and (max-width: 970px) {
+    .pitch-pro-common-preview{
+        margin-top: 0px;
+    }
+    .pitch-pro-logo{
+        width: 150px;
+    }
+    /* header.main-header-container{
+        background-color: #eaedef;
+        display: flex;
+        align-items: center;
+    } */
+    .funding-section-info .funding-title{
+        max-width: 100% !important;
+    }
+}
+.main-section-intro{
+    padding-top: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding: 90px 0 40px;
-    margin-top: 120px;
-    background-color: #e1ecf3;
+    margin-top: -100px;
+    padding-bottom: 60px;
+    font-size: 16px;
 }
-
-.contact-form-con{
-    display: flex;
-}
-.contact-heading-section{
-    width: 40%;
-}
-.form-contact-input{
-  width: 60%;
-}
-.full-input{
-    width: 100%;
-}
-.select-feild-full{
-    width: 100%;
-    display: block;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: none;
-}
-.form-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.input-sides{
-    width: 47%;
-}
-.input-feild{
-    display: block;
-    padding: 10px;
-    border-radius: 10px;
-    padding-left: 15px;
-    font-size: 15px;
-    border: none;
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
-}
-
-.select-feild{
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    height: 50px;
-    border: none;
-}
-.full-input{
-    width: 100%;
-    display: block;
-}
-.text-feild-full{
-    width: 100%;
-    display: block;
-    padding: 10px;
-    height: 115px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: none;
-}
-.submit-btn{
-    margin-top: 30px;
-}
-.submit-contact{
-    background-color: #1B66CA;
-    padding: 7px 63px 9px 28px;
-    position: relative;
-    margin-top: 20px;
-    border-radius: 20px;
-    font-size: 18px;
+.main-section-intro h1{
+    font-size: 3rem;
     font-weight: 800;
-    color: #fff;
-    border: 0px;
+    color: #3476a5;
 }
-
-.contact-container{
-    background-image: url("https://www.pitchkrafts.com/wp-content/themes/pitchkraftsfunding/images/form_banner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 90px 0 40px;
-    margin-top: 120px;
-    background-color: #e1ecf3;
+.main-section-intro p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    max-width: 677px;
+    color: #3476a5;
+    padding-top: 20px;
 }
-
-.pitch-foot {
-    padding: 100px 0;
-    background: #fafafa;
-}
-
-.footer-container{
-    display: flex;
-}
-.end-logo-container{
-    width: 30%;
-}
-.footer_address{
-    width: 300px;
+.main-section-intro .white-button, .get-start-btn{
+    font-size: 1rem;
     font-weight: 600;
+    padding: 0.5rem 1.5rem; 
+    border-radius: 1.5rem;
 }
-.usefull-link-section{
-    width: 40%;
+.main-section-intro .white-button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 1rem;
 }
-.last-footer-forever{
-    width: 30%;
-    padding-left: 70px;
-}
-.usefull-link-section{
-    display: flex;
-    justify-content: space-between;
-}
-.footer_title{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-top: 3px;
-}
-ul.footer_menu{
-    margin: 0px;
-    padding: 0px;
-}
-.footer_menu li > a{
-    text-decoration: none;
-    color: #000;
-    font-size: 13px;
-}
-li .footer_title{
-    margin: 0px;
-}
-.email_connect{
-    display: flex;
-}
-.email_icon{
-    width: 16px;
-    height: 16px;
-    background: #1B66CA;
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
-}
-
-.connect_wrap {
-    margin-left: 16px;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.connect_wrap span, .connect_wrap a{
-   display: block;
-    color: #212529;
-    text-decoration: none;
-}
-.social_links{
-    padding: 20px 0;
-    padding-left: 40px;
-}
-.social_links a {
-    margin: 0 5px;
-}
-
-.phone_connect{
-    background: #DBEBF9;
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-}
-.contact-me{
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 27px;
+.get-start-btn{
     background: #fff;
     color: #000;
-    font-weight: 800;
-    background-color: #fff;
-    backdrop-filter: blur(5px);
 }
-.connect_wrap {
-    margin-left: 16px;
+.primary-color{
+    background: #fff;
+    background: #3476a5;
+    border: none;
+    color: #fff;
+}
+.primary-color:hover{
+    background: #4298d4;
+    color: #fff;
+}
+.main-section-btn-group{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.menu-list-style li{
+    padding: 5px 15px;
+}
+
+
+/* Perk Section */
+.perk-paragraph{
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 300px;
+    padding-left: 20px;
+}
+.perk-percentage-con, .funding-card-info{
+    margin-bottom: 18px;
+}
+.perk-percentage{
+    background: #3476a5;
+    padding: 26px 20px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+.perk-percentage.low-perk{
+    padding: 26px 29px;
+}
+.percentage-brief-section{
+    padding: 45px 0px;
+}
+
+/* Funding Section CSS */
+.funding-section-info{
+    font-size: 16px;
+}
+.funding-section-info .funding-title{
+    font-size: 3rem;
     font-weight: 600;
-    font-size: 15px;
+    color: #212529;
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 4rem !important;
 }
-.social_links_inner a{
-    text-decoration: none;
-    color: #000;
+.funding-section-info h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1B66C9;
+    /* color: #67a0c8; */
+
+    margin: 0px;
 }
-.main-header-container{
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(5px);
-    background: #001aa64a;
+.funding-card-info{
+    background-color: #ebebeb;
+    padding: 1.6rem;
+    border-radius: 20px;
 }
-.testi-multi-testimonial{
-    display: flex;
-    justify-content: space-around;
+.funding-card-title{
+    font-size: 1.5rem;
+    padding: 0rem 3rem;
+    font-weight: 600;
+    line-height: 1.8rem;
 }
 
-
-@media screen and (min-width: 1000px) and (max-width: 1280px) { 
-    .pitch-con{
-       max-width: 1000px;
-    }
-    .home-main-banner{  
-      background-position: top right;
-    }
-    .desc_team-container{
-        flex-direction: column;  
-    }
+/* Redifining Css */
+.section-redifine-container{
+    font-size: 16px;
+    margin-top: 60px;
+}
+.section-redifine-content{
+    background-color:#e1ebf3;
+    padding: 3rem;
+    border-radius: 20px;
+}
+.deck-redifine-heading{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.deck-redifine-paragraph{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem; 
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 90%;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) { 
-    .pitch-con{
-        max-width: 750px;
-        padding: 15px 0px;
-     }
-    .menu-items{
-        display: none;
-    }
-    .home-main-banner{  
-        background-position: top right;
-    }
-    .desc_team-container{
-        flex-direction: column;  
-    }
-    .main-header-container{
-        padding: 15px 0px;
-    }
-    .home-main-banner{
-        margin-top: -85px;
-    }
+/* First Impresstion */
+.first-impress-container{
+    font-size: 16px;
 }
-@media only screen and (max-device-width: 800px) {
-    /* STYLES HERE */
-    .menu-items{
-        display: none;
-    }
-    .main-header-container{
-      padding: 20px 20px;
-    }
-    .pitch-con{
+.first-impress-heading{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 2.9rem;
+    font-weight: 600;
+    margin-bottom: 3rem !important;
+}
+.impression-img-brief{
+    padding-bottom: 4rem;
+}
+.impression-img-con{
+    width: 70px;
+}
+.impression-img-paragraph{
+    margin: 0px;
+    padding-left: 10px;
+    max-width: 200px;
+}
+
+/* Investment Section */
+.investor-deck-container{
+    background-color: #d4d6d7;
+    background-color: #3476a5;
+    font-size: 16px;
+    padding: 60px 0px;
+}
+.investor-deck-title{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 80px;
+    color: white;
+}
+.investor-presentation{
+    padding: 58px 0px 45px 60px;
+    background: #fff;
+    border-radius: 30px;
+}
+.investor-presentation img{
+    width: 80px;
+    height: 80px;
+}
+.investor-present-sub{
+    padding-left: 2rem;
+}
+.investor-present-title{
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    padding-right: 1rem;
+    line-height: 2rem;
+}
+
+/* Live breath Container */
+.live-breath-container{
+    font-size: 16px;
+    padding-top: 6rem;
+}
+.live-breath-heading{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.live-breath-para{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-top: 20px;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+
+.featured-in{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+/* Talk to us section */
+.contact-form-container{
+    background: #e1ebf3;
+}
+.contact-talk-us{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.contact-talk-paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Common Footer */
+.pitch-pro-footer-logo{
+    width: 200px;
+    margin-left: -3%;
+    margin-top: -10%;
+}
+.pitch-pro-common-footer{
+    font-size: 16px;
+    padding-top: 4rem;
+}
+
+.address-footer{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.footer-menu-list h5{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.menu-list-items-footer{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.menu-list-items-footer li{
+    padding: 4px 0px;
+}
+.email-connect-svg{
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+.phone-connect-svg{
+    padding-right: 10px;
+}
+.phone-connect-item{
+    background: aliceblue;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+#spin-on{
+    display: none;
+}
+@media screen and  (max-width: 425px) {
+    .container{
         padding: 0px 20px;
     }
-    .intro-title{
-        font-size: 40px;
-        line-height: 45px;
+    .funding-section-info h3{
+        font-size: 2.5rem;
+        font-weight: 700;
     }
-    .pitch-perk-main{
-        flex-direction: column;    
+    .funding-card-title{
+        font-size: 1.0rem;
+        line-height: 1.3rem;
+        padding: 0rem 1rem;
+        font-weight: 700;
     }
-    .service_name > h5 {
-        max-width: 100%;
-    }
-    .service_item{
-        margin-bottom: 20px;
-    }
-    .section_title_center{
-        max-width: 100%;
-    }
-    .deck-card-container, .investor-container{
-        flex-direction: column;
-    }
-    .redifined-pitch-container{
-        flex-direction: column;
-    }
-    .impression-grid{
-        grid-template-columns: 1fr 1fr;
-    }
-    .desc_team-container{
-        flex-direction: column-reverse;
-    }
-    .testi-container{
-        padding: 50px 25px;
-    }
-    .arrow-left-test{
-        width: 90px;
-        padding: 5px;
-    }
-    .arrow-right-test{
-        width: 90px;
-        padding: 5px;
-    }
-    .testi-multi-testimonial{
-        align-items: center;
-    }
-    .user-testi-container{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .projects_list, .owl-stage-corosol{
-        flex-wrap: wrap;
-    }
-    .contact-heading-section {
-        width: 100%;
-        text-align: center;
-    }
-    .form-contact-input{
-        width: 100%;
-    }    
-    .contact-form-con {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .usefull-link-section {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 30px;
-    }
-    .last-footer-forever{
-        width: 100%; 
-        padding-left: 0px;
-        padding: 20px 0px;
-    }
-    .user-section-testi{
-        margin: 0px;
-        width: 100%;
-    }
-    .redifined-pitch-container img{
-        width: 100%;
-    }
-    .image_area img{
-        width: 100%;
-    }
-    .owl-stage-corosol{
-        gap: 20px;
-    }
-    .input-sides{
-        width: 100%;
-    }
-    .two_col_area{
-        gap: 20px;
-    }
-    .two_col_area > .page_title_desc{
-        width: 100%;
-    }
-    .last_img{
-        display: none;
-    }
-    .section_banner .container_inner{
-        padding: 30px 30px;
+    
+    .contact-top-header{
+        height: 80px;
     }
 }
 
-@media only screen and (max-device-width: 500px){
-    .intro-title {
-        font-size: 34px;
-        line-height: 32px;
+@media screen and (max-width: 600px) {
+    .section-redifine-content{
+        padding: 1rem;
+        font-weight: 700;
+
     }
-    .main-home-btn-container{
-        flex-direction: column;
-        align-items: start;
+    .deck-redifine-paragraph{
+        font-size: 1rem;
+        font-weight: 800;
+        width: 95% !important;
     }
-    .service_item > .service_img{
-        padding: 20px 10px;
-        font-size: 24px;
-        font-weight: 900;
+    .main-section-intro h1, .first-impress-heading,
+    .funding-section-info .funding-title, .deck-redifine-heading{
+        font-size: 1.8rem;
+        max-width: 100% !important;
+        font-weight: 700;
     }
-    .section_title_center{
-        font-size: 32px;
-      line-height: 36px;
-     margin-top: 40px;
+    .investor-presentation{
+        padding: 25px 20px 25px 20px;
+        text-align: center;
+        margin-top: 50px;
     }
-    .two_col_area > .page_title_desc{
-        font-size: 19px;
-        line-height: 20px;
+    .deck-redifine-heading{
+        padding-top: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
     }
-    .two_col_area > .first_img{
-        font-size: 45px;
+    .section-redifine-content{
+        padding-bottom: 2rem
     }
-    .redifined-pitch-container{
-        gap: 30px;
+    .impression-img-brief{
+        margin-left: 30px;
     }
-    .redifine-heading{
-        font-size: 34px;
-    line-height: 35px;
+    .investor-deck-title{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0px;
+        padding-top: 15px;
     }
-    .impression-grid{
+    
+    .investor-present-title{
+        font-size: 1.2rem;
+    }
+    .investor-present-sub{
+        padding-left: 0rem;
+    }
+    .live-breath-heading{
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 700;
+    }
+    .news-letter{
+        justify-content: start;
         gap: 20px;
-        grid-template-columns: 1fr;
+        padding-bottom: 40px;
     }
-    .presentation-con{
-        flex-direction: column;
-        align-items: center;
-        padding: 27px;
+    .main-section-intro{
+        margin-top: -100px;
     }
-    .section_title_sm{
-        font-size: 23px;
-        line-height: 26px;
-    }
-    .form-flex{
-        gap: 20px;
-    }
-    .testi-content > h2{
-        font-size: 35px;
-        font-weight: 600;
-    }
-    .featured-title{
-        font-size: 35px;
-    } 
-    .arrow-left-test svg{
-        flex-shrink: 1;
-        padding: 6px;
-    }
-    .arrow-right-test {
-        width: 165px;
-        padding: 5px;
-    }
-    .arrow-left-test{
-        width: 160px;
-    }
-    .desc_team-container .section_title{
-        font-size: 35px;
-        line-height: 40px;
-    }
-    .contact-top-header ul{
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .service_name > h5 {
-        max-width: 200px;
-    }
+}
+
+.help-block{
+    color: red;
+    font-weight: 400;
+    padding-top: 1px;
 }
