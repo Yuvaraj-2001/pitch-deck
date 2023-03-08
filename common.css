@@ -226,3 +226,10 @@ a {
     text-decoration: none;
 }
 /* Footer Main End */
+
+/* Common Css for common works */
+.common-para{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
