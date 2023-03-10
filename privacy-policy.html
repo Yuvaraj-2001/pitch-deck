@@ -230,7 +230,7 @@ we may share your information with third-party vendors or business partners who 
     <h1 class="privacy-heading">Terms and Conditions</h1>
     
     <p class="priv-light">
-      pitchpro consultants user agreement last updated march 10, 2023
+      Pitchpro consultants user agreement last updated march 10, 2023
     </p>
     <h2 class="priv-bold">What do we do?</h2>
     <p class="priv-light">We provide services such as pitch deck, financial model, valuation report, business plans and other fundraising services.</p>
@@ -289,7 +289,7 @@ we may share your information with third-party vendors or business partners who 
     <p class="priv-light">(c) pitchpro does not pre-screen user content, but pitchpro and its designee(s) have the right (but not the obligation) in their sole discretion to refuse or remove any user content that is available via the services.</p>
     <p class="priv-light">(d) unless written permission is provided by pitchpro, nothing in this agreement gives you a right to use any of pitchpro trade names, trademarks, services marks, logos, domain names, or other distinctive brand names.</p>
     <p class="priv-light">(e) pitchpro is the copyright owner of all content on the <a href="www.pitchpro.in">www.pitchpro.in site.</a> </p>
-    <p>(F) BY DEFAULT, YOU AGREE TO PROVIDE PITCHPRO WITH A NON-EXCLUSIVE RIGHT AND LICENSE TO PUBLISH YOUR WORK IN OUR PORTFOLIO, SOCIAL MEDIA OR OTHER COMMUNICATION EFFORTS. IF YOU WOULD LIKE TO REVOKE THIS RIGHT, PLEASE NOTIFY OUR TEAM IN WRITING TO <a href="mailto:SUPPORT@PITCHPRO.IN">SUPPORT@PITCHPRO.IN</a>.</p>
+    <p class="priv-light">(F) BY DEFAULT, YOU AGREE TO PROVIDE PITCHPRO WITH A NON-EXCLUSIVE RIGHT AND LICENSE TO PUBLISH YOUR WORK IN OUR PORTFOLIO, SOCIAL MEDIA OR OTHER COMMUNICATION EFFORTS. IF YOU WOULD LIKE TO REVOKE THIS RIGHT, PLEASE NOTIFY OUR TEAM IN WRITING TO <a href="mailto:SUPPORT@PITCHPRO.IN">SUPPORT@PITCHPRO.IN</a>.</p>
     
     
     <h2 class="priv-bold">Notification of copyright infringement claims
@@ -371,8 +371,8 @@ content that, in the sole judgment of pitchpro, is objectionable or which restri
     <h2 class="priv-bold">Prohibited usage</h2>
     <p class="priv-light">You specifically acknowledge that pitchpro will not be liable for illegal conduct of any third party and that the risk of harm or damage from the foregoing rests entirely with you.
       by using pitchpro, you represent and warrant that you meet all the requirements listed above, and that you won’t use pitchpro in a way that violates any laws or regulations. pitchpro may refuse service, cancel service requests of users, and change eligibility requirements at any time.</p>
-    <p>WE WON’T BE HELD LIABLE FOR ANY DELAYS OR FAILURE IN THE PERFORMANCE OF ANY PART OF THE SERVICE, FROM ANY CAUSE BEYOND OUR CONTROL. THIS INCLUDES, BUT IS NOT LIMITED TO, ACTS OF GOD, CHANGES TO LAW OR REGULATIONS, EMBARGOES, WAR, TERRORIST ACTS, RIOTS, FIRES, EARTHQUAKES, NUCLEAR ACCIDENTS, FLOODS, STRIKES, POWER BLACKOUTS, VOLCANIC ACTION, UNUSUALLY SEVERE WEATHER CONDITIONS, AND ACTS OF HACKERS OR THIRD-PARTY INTERNET SERVICE PROVIDERS.</p>
-
+    <p class="priv-light">We won’t be held liable for any delays or failure in the performance of any part of the service, from any cause beyond our control. This includes, but is not limited to, acts of god, changes to law or regulations, embargoes, war, terrorist acts, riots, fires, earthquakes, nuclear accidents, floods, strikes, power blackouts, volcanic action, unusually severe weather conditions, and acts of hackers or third-party internet service providers.</p>
+    
     <h2 class="priv-bold">Solicitationfor employment.</h2>
     <p class="priv-light">The parties agree that neither party and theirassociated entities, sub-contractors or their employees will employor approach for employment, the employees or ex-employees of theother party, during the term and until a minimum period of six (6)months following the termination of this agreement</p>
     </div>
@@ -467,14 +467,14 @@ content that, in the sole judgment of pitchpro, is objectionable or which restri
   </footer>
 
   <script>
-    document.querySelectorAll('.hello-list').forEach(e => {
+    document.querySelectorAll('.priv-ll-light').forEach(e => {
       let sentence = e.innerHTML.toLocaleLowerCase().split('');
       sentence[0] = '';
-      // sentence.forEach((e,index) => {
-      //   if(e === '.' && sentence.length !== (index + 1)){
-      //     sentence[index+2] = sentence[index+2].toLocaleUpperCase();
-      //   }
-      // });
+      sentence.forEach((e,index) => {
+        if(e === '.' && sentence.length !== (index + 1)){
+          sentence[index+2] = sentence[index+2].toLocaleUpperCase();
+        }
+      });
       const newSentence = e.innerHTML.split('')[0].toLocaleUpperCase() + sentence.join('');
       e.innerHTML = newSentence;
     });
