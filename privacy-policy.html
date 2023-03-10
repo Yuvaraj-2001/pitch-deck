@@ -467,17 +467,17 @@ content that, in the sole judgment of pitchpro, is objectionable or which restri
   </footer>
 
   <script>
-    document.querySelectorAll('.priv-ll-light').forEach(e => {
-      let sentence = e.innerHTML.toLocaleLowerCase().split('');
-      sentence[0] = '';
-      sentence.forEach((e,index) => {
-        if(e === '.' && sentence.length !== (index + 1)){
-          sentence[index+2] = sentence[index+2].toLocaleUpperCase();
-        }
-      });
-      const newSentence = e.innerHTML.split('')[0].toLocaleUpperCase() + sentence.join('');
-      e.innerHTML = newSentence;
-    });
+    // document.querySelectorAll('.priv-ll-light').forEach(e => {
+    //   let sentence = e.innerHTML.toLocaleLowerCase().split('');
+    //   sentence[0] = '';
+    //   sentence.forEach((e,index) => {
+    //     if(e === '.' && sentence.length !== (index + 1)){
+    //       sentence[index+2] = sentence[index+2].toLocaleUpperCase();
+    //     }
+    //   });
+    //   const newSentence = e.innerHTML.split('')[0].toLocaleUpperCase() + sentence.join('');
+    //   e.innerHTML = newSentence;
+    // });
   </script>
 </body>
 </html>
