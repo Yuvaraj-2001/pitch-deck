@@ -26,13 +26,13 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5M34BT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="main-header-container">
-      <img src="assets/pitchProLogo.svg" onclick="location.href='index.html'" class="pitch-pro-logo"/>
+      <img src="assets/pitchProLogo.svg" onclick="location.href='index.html'" class="pitch-pro-logo" alt="company logo"/>
       <div class="container">
           <div class="w-100 d-flex align-items-center justify-content-end">
           <div class="menu-items">
               <ul class="list-unstyled d-none d-lg-block menu-list-style">
-                <a href="index.html"><li class="d-inline">Home</li></a>
-                <a href="about-us.html"><li class="d-inline">About Us</li></a>
+                <a href="index.html" title="Pitch pro home page"><li class="d-inline">Home</li></a>
+                <a href="about-us.html" title="Pitch pro about page"><li class="d-inline">About Us</li></a>
               <li class="d-inline services-dropdown-con">
                 <input type="checkbox" class="d-none" id="service-dropdown-id" value="0" >
                 <label for="service-dropdown-id">
@@ -53,9 +53,9 @@
                     <div class="services-dropdown-list">Research and development</div>
                   </div>
               </li>
-              <a href="about-us.html"><li class="d-inline">Why we?</li></a>
+              <a href="about-us.html" title="Pitch pro about page"><li class="d-inline">Why we?</li></a>
               <li class="d-inline contact ">
-                  <a class="btn btn-primary primary-color" href="contact-us.html">Contact Us</a>
+                  <a class="btn btn-primary primary-color" href="contact-us.html" title="Pitch pro contact page">Contact Us</a>
               </li>
               </ul>
           </div>
@@ -67,19 +67,24 @@
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
             </label>
-            <label for="nav-check-box" class="cross-nav-con">
+            <!-- <label for="nav-check-box" class="cross-nav-con">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#3476a5" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
               </svg>
-            </label>
+            </label> -->  
             <div class="navigation-panel">
-              <video autoplay muted loop class="dropdown-video">
+              <!-- <video autoplay muted loop class="dropdown-video">
                 <source src="assets/side-menu.mp4" loading="lazy" type="video/mp4">
                 Your browser does not support HTML5 video.
-              </video>
+              </video> -->
+              <label for="nav-check-box" class="cross-nav-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#3476a5" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                </svg>
+              </label> 
               <ul class="list-unstyled menu-list-style list-menu-mobile">
-                <a href="index.html"><li>Home</li></a>
-                <a href="about-us.html"><li>About Us</li></a>
+                <a href="index.html" title="Pitch pro home page"><li>Home</li></a>
+                <a href="about-us.html" title="Pitch pro about page"><li>About Us</li></a>
               <li class="d-block services-dropdown-con">
                 <input type="checkbox" class="d-none" id="service-dropdown-id-mob" value="0" >
                 <label for="service-dropdown-id-mob">
@@ -103,9 +108,9 @@
                   </div>
   
               </li>
-              <a href="about-us.html"><li>Why we?</li></a>
+              <a href="about-us.html" title="Page about why we?"><li>Why we?</li></a>
               <li class="contact">
-                  <a class="btn btn-primary primary-color" href="contact-us.html">Contact Us</a>
+                  <a class="btn btn-primary primary-color" title="Page about Contact us" href="contact-us.html">Contact Us</a>
               </li>
               </ul>
             </div>
@@ -113,6 +118,7 @@
           </div>
       </div>
   </header>
+  
 
   <div id="respone">
             
