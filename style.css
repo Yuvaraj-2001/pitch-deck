@@ -304,8 +304,9 @@ a:hover{
 }
 .impression-img-paragraph{
     margin: 0px;
-    padding-left: 10px;
-    max-width: 200px;
+    font-size: 18px;
+    padding-left: 15px;
+    max-width: 202px;
 }
 
 /* Investment Section */
