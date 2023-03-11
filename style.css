@@ -308,7 +308,9 @@ a:hover{
     padding-left: 15px;
     max-width: 202px;
 }
-
+.second-item-circle{
+    margin-left: -15px;
+}
 /* Investment Section */
 .investor-deck-container{
     background-color: #d4d6d7;
@@ -442,6 +444,9 @@ a:hover{
 }
 
 @media screen and (max-width: 600px) {
+    .second-item-circle{
+        margin-left: 0px;
+    }
     .section-redifine-content{
         padding: 1rem;
         font-weight: 700;
