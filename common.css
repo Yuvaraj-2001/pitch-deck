@@ -126,7 +126,7 @@ header.main-header-container{
     left: 0%;
 }
 .list-menu-mobile{
-    padding-top: 50px;
+    padding-top: 30px;
     position: relative;
     text-align: left;
     left: 30%;
@@ -138,9 +138,7 @@ header.main-header-container{
     border-bottom: 1px solid;
     font-weight: 800;
 }
-.list-menu-mobile a{
-    color: #fff;
-}
+
 .list-menu-mobile a:hover{
     color: #000;
 }
@@ -236,7 +234,7 @@ a {
 
 /* Common Css for common works */
 .common-para{
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.2rem;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
