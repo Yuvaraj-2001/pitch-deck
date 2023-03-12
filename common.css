@@ -238,3 +238,27 @@ a {
     font-size: 18px;
     font-weight: 500;
 }
+
+
+/* Talk to us section */
+.contact-form-container{
+    background: #e1ebf3;
+}
+.contact-talk-us{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.contact-talk-paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#spin-on{
+    display: none;
+}
+
+
+.help-block{
+    color: red;
+    font-weight: 400;
+    padding-top: 1px;
+}
