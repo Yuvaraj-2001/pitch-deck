@@ -10,7 +10,10 @@ a:hover{
     text-decoration: none;
 }
 
-
+.map-view-container img{
+    max-height: 400px;
+    max-width: 600px;
+}
 @media screen and (min-width: 1300px) {
     .container{
         max-width: 1250px;

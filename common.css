@@ -128,7 +128,7 @@ header.main-header-container{
 }
 .list-menu-mobile{
     padding-top: 30px;
-    margin-top: 60px;
+    margin-top: 0px;
     position: relative;
     text-align: left;
     padding-right: 10px;
@@ -140,6 +140,10 @@ header.main-header-container{
 }
 .list-menu-mobile.menu-list-style li.contact{
     border-bottom: 0px solid;
+}
+.navigation-logo-img{
+    margin-left: 5%;
+    width: 50%;
 }
 .list-menu-mobile.menu-list-style li{
     padding: 15px 15px;
