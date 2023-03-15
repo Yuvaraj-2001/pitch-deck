@@ -109,6 +109,7 @@ header.main-header-container{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    box-shadow: 10px 0 5px -3px #e2dcdc;
 }
 .dropdown-video{
     width: 75vw;
@@ -127,10 +128,18 @@ header.main-header-container{
 }
 .list-menu-mobile{
     padding-top: 30px;
+    margin-top: 60px;
     position: relative;
     text-align: left;
+    padding-right: 10px;
     left: 30%;
+    max-height: 500px;
+    overflow-y: auto;
     width: 60%;
+    border-bottom: 1px solid #3476a5;
+}
+.list-menu-mobile.menu-list-style li.contact{
+    border-bottom: 0px solid;
 }
 .list-menu-mobile.menu-list-style li{
     padding: 15px 15px;
@@ -258,7 +267,7 @@ a {
 
 
 .help-block{
-    color: red;
+    color: red; 
     font-weight: 400;
     padding-top: 1px;
 }

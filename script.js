@@ -118,87 +118,105 @@ function dsdasd(){
   xhttp.send();
 }
 
-const tabsBox = document.querySelector(".tabs-box"),
-allTabs = tabsBox.querySelectorAll(".tab"),
-arrowIcons = document.querySelectorAll(".icon i");
+// const tabsBox = document.querySelector(".tabs-box"),
+// allTabs = tabsBox.querySelectorAll(".tab"),
+// arrowIcons = document.querySelectorAll(".icon i");
 
-let isDragging = false;
+// let isDragging = false;
 
-const handleIcons = (scrollVal) => {
-    let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
-    arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
-    arrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
-}
+// const handleIcons = (scrollVal) => {
+//     let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
+//     arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
+//     arrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
+// }
 
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
+// arrowIcons.forEach(icon => {
+//     icon.addEventListener("click", () => {
       
-        // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
-        if(arrowIcons[1].parentElement.style.display === 'none'){
-          clearInterval(interVal);
-          let elements = ''; 
-          allTabs.forEach(function(e){
-            elements += e.outerHTML;
-          });
-          tabsBox.innerHTML = '';
-          tabsBox.innerHTML = elements;
-          tabsBox.scrollLeft = 0;
-          // allTabs[0].style.display = 'block';
-          // allTabs[0].style.display = 'block';
-          // allTabs.forEach(function(e){
-          //   e.style.display = 'block';
-          // });
-          // arrowIcons[1].parentElement.style.display = 'flex';
-          // arrowIcons[0].parentElement.style.display = 'none';
+//         // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+//         if(arrowIcons[1].parentElement.style.display === 'none'){
+//           clearInterval(interVal);
+//           let elements = ''; 
+//           allTabs.forEach(function(e){
+//             elements += e.outerHTML;
+//           });
+//           tabsBox.innerHTML = '';
+//           tabsBox.innerHTML = elements;
+//           tabsBox.scrollLeft = 0;
+//           // allTabs[0].style.display = 'block';
+//           // allTabs[0].style.display = 'block';
+//           // allTabs.forEach(function(e){
+//           //   e.style.display = 'block';
+//           // });
+//           // arrowIcons[1].parentElement.style.display = 'flex';
+//           // arrowIcons[0].parentElement.style.display = 'none';
           
-          interValStart();
-          return;
-         }
-        let scrollWidth = tabsBox.scrollLeft += icon.id === "left-arrow" ? -1050 : 1050;
-        handleIcons(scrollWidth);
-    });
-});
+//           interValStart();
+//           return;
+//          }
+//         let scrollWidth = tabsBox.scrollLeft += icon.id === "left-arrow" ? -1050 : 1050;
+//         handleIcons(scrollWidth);
+//     });
+// });
 
-allTabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-        tabsBox.querySelector(".active").classList.remove("active");
-        tab.classList.add("active");
-    });
-});
+// allTabs.forEach(tab => {
+//     tab.addEventListener("click", () => {
+//         tabsBox.querySelector(".active").classList.remove("active");
+//         tab.classList.add("active");
+//     });
+// });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  interValStart();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   interValStart();
+// });
 
-function interValStart(){
-  setTimeout(()=>{
-    tabsBox.scrollLeft = 900;
-    handleIcons(800);
-    interVal = setInterval(function() {
-      document.querySelector("#right-arrow").click();
-    }, 3000);
-  }, 3000);
+// function interValStart(){
+//   setTimeout(()=>{
+//     tabsBox.scrollLeft = 900;
+//     handleIcons(800);
+//     interVal = setInterval(function() {
+//       document.querySelector("#right-arrow").click();
+//     }, 3000);
+//   }, 3000);
+// }
+
+// const dragging = (e) => {
+//     if(!isDragging) return;
+//     tabsBox.classList.add("dragging");
+//     tabsBox.scrollLeft -= e.movementX;
+//     handleIcons(tabsBox.scrollLeft)
+// }
+
+// const dragStop = () => {
+//     isDragging = false;
+//     tabsBox.classList.remove("dragging");
+// }
+
+// tabsBox.addEventListener("mousedown", () => isDragging = true);
+// tabsBox.addEventListener("mousemove", dragging);
+// document.addEventListener("mouseup", dragStop);
+
+
+let touchstartX = 0
+let touchendX = 0
+    
+function checkDirection() {
+  if (touchendX < touchstartX){
+    document.querySelector('#nav-check-box').checked = false;
+  }
 }
 
-const dragging = (e) => {
-    if(!isDragging) return;
-    tabsBox.classList.add("dragging");
-    tabsBox.scrollLeft -= e.movementX;
-    handleIcons(tabsBox.scrollLeft)
-}
+document.querySelector('.navigation-panel').addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
 
-const dragStop = () => {
-    isDragging = false;
-    tabsBox.classList.remove("dragging");
-}
-
-tabsBox.addEventListener("mousedown", () => isDragging = true);
-tabsBox.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
+document.querySelector('.navigation-panel').addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
 
 window.dataLayer = window.dataLayer || [];
-
 function onLoadDataLayer(){
   dataLayer.push({
     'color': 'red',
