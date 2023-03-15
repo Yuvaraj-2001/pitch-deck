@@ -95,6 +95,7 @@ function idval(id){
 }
 
 function dsdasd(){
+  document.getElementById("respone").innerHTML = "<div class='text-center' style='margin: 100px'><h1 class='spinner-border text-primary' ></h1></div>"
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
