@@ -239,6 +239,9 @@ a {
     border-radius: 100%;
     box-shadow: 0px 0px 10px -3px;
 }
+.linked-in-connect{
+    padding-top: 20px;
+}
 .connection-wrap{
     color: #000;
     text-decoration: none;
