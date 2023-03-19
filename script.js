@@ -1,4 +1,23 @@
 
+let touchstartX = 0
+let touchendX = 0
+    
+function checkDirection() {
+  if (touchendX < touchstartX){
+    document.querySelector('#nav-check-box').checked = false;
+  }
+}
+
+document.querySelector('.navigation-panel').addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+document.querySelector('.navigation-panel').addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
+
+
 var validator = new Dominar(document.querySelector('.dominar-form-contact'), {
     user_name: {
       rules: 'required|min:3',
@@ -119,103 +138,126 @@ function dsdasd(){
   xhttp.send();
 }
 
-// const tabsBox = document.querySelector(".tabs-box"),
-// allTabs = tabsBox.querySelectorAll(".tab"),
-// arrowIcons = document.querySelectorAll(".icon i");
+// Slider Part
+var slider = document.getElementById('slider'),
+    sliderItems = document.getElementById('slides'),
+    prev = document.getElementById('prev'),
+    next = document.getElementById('next');
 
-// let isDragging = false;
-
-// const handleIcons = (scrollVal) => {
-//     let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
-//     arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
-//     arrowIcons[1].parentElement.style.display = maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
-// }
-
-// arrowIcons.forEach(icon => {
-//     icon.addEventListener("click", () => {
-      
-//         // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
-//         if(arrowIcons[1].parentElement.style.display === 'none'){
-//           clearInterval(interVal);
-//           let elements = ''; 
-//           allTabs.forEach(function(e){
-//             elements += e.outerHTML;
-//           });
-//           tabsBox.innerHTML = '';
-//           tabsBox.innerHTML = elements;
-//           tabsBox.scrollLeft = 0;
-//           // allTabs[0].style.display = 'block';
-//           // allTabs[0].style.display = 'block';
-//           // allTabs.forEach(function(e){
-//           //   e.style.display = 'block';
-//           // });
-//           // arrowIcons[1].parentElement.style.display = 'flex';
-//           // arrowIcons[0].parentElement.style.display = 'none';
-          
-//           interValStart();
-//           return;
-//          }
-//         let scrollWidth = tabsBox.scrollLeft += icon.id === "left-arrow" ? -1050 : 1050;
-//         handleIcons(scrollWidth);
-//     });
-// });
-
-// allTabs.forEach(tab => {
-//     tab.addEventListener("click", () => {
-//         tabsBox.querySelector(".active").classList.remove("active");
-//         tab.classList.add("active");
-//     });
-// });
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   interValStart();
-// });
-
-// function interValStart(){
-//   setTimeout(()=>{
-//     tabsBox.scrollLeft = 900;
-//     handleIcons(800);
-//     interVal = setInterval(function() {
-//       document.querySelector("#right-arrow").click();
-//     }, 3000);
-//   }, 3000);
-// }
-
-// const dragging = (e) => {
-//     if(!isDragging) return;
-//     tabsBox.classList.add("dragging");
-//     tabsBox.scrollLeft -= e.movementX;
-//     handleIcons(tabsBox.scrollLeft)
-// }
-
-// const dragStop = () => {
-//     isDragging = false;
-//     tabsBox.classList.remove("dragging");
-// }
-
-// tabsBox.addEventListener("mousedown", () => isDragging = true);
-// tabsBox.addEventListener("mousemove", dragging);
-// document.addEventListener("mouseup", dragStop);
-
-
-let touchstartX = 0
-let touchendX = 0
+function slide(wrapper, items, prev, next) {
+  var posX1 = 0,
+      posX2 = 0,
+      posInitial,
+      posFinal,
+      threshold = 100,
+      slides = items.getElementsByClassName('slide'),
+      slidesLength = slides.length,
+      slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
+      firstSlide = slides[0],
+      lastSlide = slides[slidesLength - 1],
+      cloneFirst = firstSlide.cloneNode(true),
+      cloneLast = lastSlide.cloneNode(true),
+      index = 0,
+      allowShift = true;
+  
+  // Clone first and last slide
+  items.appendChild(cloneFirst);
+  items.insertBefore(cloneLast, firstSlide);
+  wrapper.classList.add('loaded');
+  
+  // Mouse events
+  items.onmousedown = dragStart;
+  
+  // Touch events
+  items.addEventListener('touchstart', dragStart);
+  items.addEventListener('touchend', dragEnd);
+  items.addEventListener('touchmove', dragAction);
+  
+  // Click events
+  prev.addEventListener('click', function () { shiftSlide(-1) });
+  next.addEventListener('click', function () { shiftSlide(1) });
+  
+  // Transition events
+  items.addEventListener('transitionend', checkIndex);
+  
+  function dragStart (e) {
+    e = e || window.event;
+    e.preventDefault();
+    posInitial = items.offsetLeft;
     
-function checkDirection() {
-  if (touchendX < touchstartX){
-    document.querySelector('#nav-check-box').checked = false;
+    if (e.type == 'touchstart') {
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX1 = e.clientX;
+      document.onmouseup = dragEnd;
+      document.onmousemove = dragAction;
+    }
+  }
+
+  function dragAction (e) {
+    e = e || window.event;
+    
+    if (e.type == 'touchmove') {
+      posX2 = posX1 - e.touches[0].clientX;
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX2 = posX1 - e.clientX;
+      posX1 = e.clientX;
+    }
+    items.style.left = (items.offsetLeft - posX2) + "px";
+  }
+  
+  function dragEnd (e) {
+    posFinal = items.offsetLeft;
+    if (posFinal - posInitial < -threshold) {
+      shiftSlide(1, 'drag');
+    } else if (posFinal - posInitial > threshold) {
+      shiftSlide(-1, 'drag');
+    } else {
+      items.style.left = (posInitial) + "px";
+    }
+
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+  
+  function shiftSlide(dir, action) {
+    items.classList.add('shifting');
+    
+    if (allowShift) {
+      if (!action) { posInitial = items.offsetLeft; }
+
+      if (dir == 1) {
+        items.style.left = (posInitial - slideSize) + "px";
+        index++;      
+      } else if (dir == -1) {
+        items.style.left = (posInitial + slideSize) + "px";
+        index--;      
+      }
+    };
+    
+    allowShift = false;
+  }
+    
+  function checkIndex (){
+    items.classList.remove('shifting');
+
+    if (index == -1) {
+      items.style.left = -(slidesLength * slideSize) + "px";
+      index = slidesLength - 1;
+    }
+
+    if (index == slidesLength) {
+      items.style.left = -(1 * slideSize) + "px";
+      index = 0;
+    }
+    
+    allowShift = true;
   }
 }
 
-document.querySelector('.navigation-panel').addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX
-})
+slide(slider, sliderItems, prev, next);
 
-document.querySelector('.navigation-panel').addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX
-  checkDirection()
-})
 
 window.dataLayer = window.dataLayer || [];
 function onLoadDataLayer(){
@@ -225,7 +267,7 @@ function onLoadDataLayer(){
     'conversionValue': 50,
     'event': 'user_load'
   });
-}
+};
 setTimeout(function(){
   onLoadDataLayer();
   // dataLayer('js', new Date());

@@ -495,111 +495,103 @@ a:hover{
 }
 
 
-.slide-section {
-    display: flex;
-    padding: 200px 0px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #5372F0;
-  }
-  .wrapper {
-    padding: 35px;
+/* Slider Section */
+.infinite-slider-container{
     position: relative;
-    overflow-x: hidden;
-    max-width: 90vw;
-    background: #fff;
-    border-radius: 13px;
-  }
-  .wrapper .icon {
+    height: 400px;
+}
+.slider {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+    height: 300px;
+    z-index: 1;
+  }
+  
+  .slides {
+    display: flex;
+    position: relative;
     top: 0;
-    height: 100%;
-    width: 120px;
-    display: flex;
-    align-items: center;
+    left: -800px;
+    width: 10000px;
   }
-  .icon:first-child {
-    left: 0;
-    display: none;
-    background: linear-gradient(90deg, #fff 70%, transparent);
+  
+  .slides.shifting {
+    transition: left 0.2s ease-out;
   }
-  .icon:last-child {
-    right: 0;
-    justify-content: flex-end;
-    background: linear-gradient(-90deg, #fff 70%, transparent);
-  }
-  .icon i {
-    width: 55px;
-    height: 55px;
+  
+  .slide {
+    width: 800px;
+    height: 300px;
     cursor: pointer;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 55px;
-    border-radius: 50%;
-  }
-  .icon i:hover {
-    background: #efedfb;
-  }
-  .icon:first-child i {
-    margin-left: 15px;
-  } 
-  .icon:last-child i {
-    margin-right: 15px;
-  } 
-  .wrapper .tabs-box {
     display: flex;
-    gap: 12px;
-    list-style: none;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    background: #FFCF47;
+    border-radius: 2px;
   }
-  .tabs-box.dragging {
-    scroll-behavior: auto;
-    cursor: grab;
+  
+  .slider.loaded .slide:nth-child(2),
+  .slider.loaded .slide:nth-child(7) {
+    background: #FFCF47;
   }
-  .tabs-box .tab {
+  .slider.loaded .slide:nth-child(1),
+  .slider.loaded .slide:nth-child(6) {
+    background: #7ADCEF;
+  }
+  .slider.loaded .slide:nth-child(3) {
+    background: #3CFF96;
+  }
+  .slider.loaded .slide:nth-child(4) {
+    background: #a78df5;
+  }
+  .slider.loaded .slide:nth-child(5) {
+    background: #ff8686;
+  }
+  
+  .control {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  
+  .prev,
+  .next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    font-size: 1.18rem;
-    white-space: nowrap;
-    background: #f5f4fd;
-    padding: 13px 20px;
-    height: 535px;
-    border-radius: 30px;
-    border: 1px solid #d8d5f2;
   }
-  .tabs-box .tab:hover{
-    background: #efedfb;
+  
+  .prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+    left: -20px;
   }
-  .tabs-box.dragging .tab {
-    user-select: none;
-    pointer-events: none;
+  
+  .next {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+    right: -20px;
   }
-  .tabs-box .tab.active{
-    color: #fff;
-    background: #5372F0;
-    border-color: transparent;
-  }
-  .thi-icon-slide{
-    background: #124dd9;
-  }
-
-  @media screen and (max-width: 760px) {
-    .icon:last-child, .icon:first-child{
-        background: transparent;
-    }
-    .slide-section{
-        padding: 20px 0px;
-        min-height: unset;
-    }
-    .wrapper{
-        max-width: 95vw;
-    }
-    .tabs-box .tab, .tab img{
-        height: 300px
-    }
-    .tab img{
-        height: 270px;
-        border-radius: 20px;
-    }
+  
+  .prev:active,
+  .next:active {
+    transform: scale(0.8);
   }
