@@ -503,6 +503,9 @@ a:hover{
         width: 100%;
         padding: 0px 25px;
     }
+    .slideshow-container{
+        padding-top:50px;
+    }
 }
 
 
@@ -511,6 +514,7 @@ a:hover{
 .slideshow-container {
     position: relative;
     margin: auto;
+    padding-bottom: 40px;
   }
   
   /* Next & previous buttons */
