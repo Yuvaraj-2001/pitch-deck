@@ -145,7 +145,6 @@ var slider = document.getElementById('slider'),
     next = document.getElementById('next');
 
 function slide(wrapper, items, prev, next) {
-  debugger
   var posX1 = 0,
       posX2 = 0,
       posInitial,
@@ -177,7 +176,9 @@ function slide(wrapper, items, prev, next) {
   // Click events
   prev.addEventListener('click', function () { shiftSlide(-1) });
   next.addEventListener('click', function () { shiftSlide(1) });
-  
+  setInterval(()=>{
+    shiftSlide(1) 
+  }, 3000)
   // Transition events
   items.addEventListener('transitionend', checkIndex);
   

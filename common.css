@@ -106,7 +106,7 @@ header.main-header-container{
     height: 100vh;
     background: #fff;
     top: 0px;
-    left: -100%;
+    left: -105%;
     text-align: center;
     transition: all .5s;
     box-shadow: 10px 0 5px -3px #e2dcdc;

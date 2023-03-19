@@ -429,7 +429,7 @@ a:hover{
         height: 80px;
     }
 }
-
+.the-m-img{display:none;}
 @media screen and (max-width: 600px) {
     .second-item-circle{
         margin-left: 0px;
@@ -492,6 +492,10 @@ a:hover{
     .main-section-intro{
         margin-top: -100px;
     }
+    .the-d-img{
+        display:none;
+    }
+    .the-m-img{display:block;}
 }
 
 
