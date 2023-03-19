@@ -495,107 +495,102 @@ a:hover{
     .the-d-img{
         display:none;
     }
-    .the-m-img{display:block;}
+    .the-m-img{
+        display:block;
+        text-align: center;
+    }
+    .the-m-img img{
+        width: 100%;
+        padding: 0px 25px;
+    }
 }
 
 
 /* Slider Section */
-.infinite-slider-container{
+/* Slideshow container */
+.slideshow-container {
     position: relative;
-    height: 600px;
-}
-.slider {
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    box-shadow: -1px 1px 5px 5px rgb(0 0 0 / 19%);
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
   
-  .wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 90vw;
-    height: 500px;
-    z-index: 1;
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
   
-  .slides {
-    display: flex;
-    position: relative;
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
     top: 0;
-    /* gap: 2vw; */
-    left: -90vw;
-    width: 10000px;
   }
   
-  .slides.shifting {
-    transition: left 0.2s ease-out;
-  }
-  
-  .slide {
-    width: 90vw;
-    height: 500px;
+  /* The dots/bullets/indicators */
+  .dot {
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 1s;
-    position: relative;
-    background: #FFCF47;
-    border-radius: 2px;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 2px solid #3476a5;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
   
-  .slider.loaded .slide:nth-child(2),
-  .slider.loaded .slide:nth-child(7) {
-    background: #FFCF47;
-  }
-  .slider.loaded .slide:nth-child(1),
-  .slider.loaded .slide:nth-child(6) {
-    background: #7ADCEF;
-  }
-  .slider.loaded .slide:nth-child(3) {
-    background: #3CFF96;
-  }
-  .slider.loaded .slide:nth-child(4) {
-    background: #a78df5;
-  }
-  .slider.loaded .slide:nth-child(5) {
-    background: #ff8686;
+  .dot.active, .dot:hover {
+    background-color: #3476a5;
   }
   
-  .control {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    background: #3476a5;
-    border-radius: 50px;
-    margin-top: -20px;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
-    z-index: 2;
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .fade:not(.show){
+    opacity: unset;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
   }
   
-  .prev,
-  .next {
-    background-size: 22px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  
-  .prev {
-    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-    left: -20px;
-  }
-  
-  .next {
-    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-    right: -20px;
-  }
-  
-  .prev:active,
-  .next:active {
-    transform: scale(0.8);
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
   }
