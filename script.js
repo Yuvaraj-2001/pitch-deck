@@ -147,7 +147,9 @@ function plusSlides(n) {
 }
 
 function currentSlide(n) {
+  clearInterval(coroselInterval)
   showSlides(slideIndex = n);
+  coroselInterval = setInterval(()=>{plusSlides(1)}, 4000)
 }
 
 function showSlides(n) {
@@ -165,7 +167,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-setInterval(()=>{plusSlides(1)}, 4000)
+var coroselInterval = setInterval(()=>{plusSlides(1)}, 4000)
 
 window.dataLayer = window.dataLayer || [];
 function onLoadDataLayer(){
