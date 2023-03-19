@@ -2,6 +2,7 @@
 userResume = '';
 async function toBase64 (file){
     return await new Promise((resolve, reject) => {
+      //  resolve(btoa(file));
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result);
@@ -75,10 +76,18 @@ function validateResume(){
             user_resume: userResume
         }
         console.log(payload);
-
         document.getElementById('email_id').value = '';
         document.getElementById('mobile_no').value = '';
         document.getElementById('user_location').value = '';
         document.getElementById('user_job').value = '';
     })
+}
+
+function baseDecode(){
+  var link = document.createElement('a');
+  link.innerHTML = 'Download PDF file';
+  link.href = userResume;
+  link.download = 'someName'
+  link.target = '_blank';
+  document.querySelector('#dedede').appendChild(link);
 }
