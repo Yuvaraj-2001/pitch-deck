@@ -144,12 +144,14 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  clearTimeout(coroselInterval);
+  coroselInterval = setTimeout(()=>{plusSlides(1)}, 4000)
 }
 
 function currentSlide(n) {
-  clearInterval(coroselInterval)
+  clearTimeout(coroselInterval);
   showSlides(slideIndex = n);
-  coroselInterval = setInterval(()=>{plusSlides(1)}, 4000)
+  coroselInterval = setTimeout(()=>{plusSlides(1)}, 4000)
 }
 
 function showSlides(n) {
@@ -167,7 +169,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-var coroselInterval = setInterval(()=>{plusSlides(1)}, 4000)
+var coroselInterval = setTimeout(()=>{plusSlides(1)}, 4000)
 
 window.dataLayer = window.dataLayer || [];
 function onLoadDataLayer(){

@@ -511,10 +511,31 @@ a:hover{
 
 /* Slider Section */
 /* Slideshow container */
-.slideshow-container {
+  .slideshow-container {
     position: relative;
     margin: auto;
     padding-bottom: 40px;
+  }
+  .infinite-slider-container{
+    position: relative;
+  }
+  .invisible-slider-left{
+    top: 50px;
+    height: 68%;
+    width: 30%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .invisible-slider-right{
+    top: 50px;
+    right: 0px;
+    height: 68%;
+    width: 30%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
   }
   
   /* Next & previous buttons */
