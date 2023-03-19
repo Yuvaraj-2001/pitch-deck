@@ -84,6 +84,7 @@ function validateResume(){
 }
 
 function baseDecode(){
+  document.querySelector('#dedede').innerHTML = '';
   var link = document.createElement('a');
   link.innerHTML = 'Download PDF file';
   link.href = userResume;
