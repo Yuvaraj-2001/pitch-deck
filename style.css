@@ -498,23 +498,22 @@ a:hover{
 /* Slider Section */
 .infinite-slider-container{
     position: relative;
-    height: 400px;
+    height: 600px;
 }
 .slider {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    height: 300px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    box-shadow: -1px 1px 5px 5px rgb(0 0 0 / 19%);
   }
   
   .wrapper {
     overflow: hidden;
     position: relative;
-    width: 800px;
-    height: 300px;
+    width: 90vw;
+    height: 500px;
     z-index: 1;
   }
   
@@ -522,7 +521,8 @@ a:hover{
     display: flex;
     position: relative;
     top: 0;
-    left: -800px;
+    /* gap: 2vw; */
+    left: -90vw;
     width: 10000px;
   }
   
@@ -531,8 +531,8 @@ a:hover{
   }
   
   .slide {
-    width: 800px;
-    height: 300px;
+    width: 90vw;
+    height: 500px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -566,10 +566,10 @@ a:hover{
     top: 50%;
     width: 50px;
     height: 50px;
-    background: #fff;
+    background: #3476a5;
     border-radius: 50px;
     margin-top: -20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
     z-index: 2;
   }
   

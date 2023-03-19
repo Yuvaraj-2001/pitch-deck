@@ -145,6 +145,7 @@ var slider = document.getElementById('slider'),
     next = document.getElementById('next');
 
 function slide(wrapper, items, prev, next) {
+  debugger
   var posX1 = 0,
       posX2 = 0,
       posInitial,
@@ -223,7 +224,6 @@ function slide(wrapper, items, prev, next) {
   
   function shiftSlide(dir, action) {
     items.classList.add('shifting');
-    
     if (allowShift) {
       if (!action) { posInitial = items.offsetLeft; }
 
