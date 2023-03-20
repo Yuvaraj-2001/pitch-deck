@@ -2,7 +2,6 @@
 userResume = '';
 async function toBase64 (file){
     return await new Promise((resolve, reject) => {
-      //  resolve(btoa(file));
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result);
@@ -10,8 +9,12 @@ async function toBase64 (file){
 });
 }
 
-Dominar.Validator.register('resume', async function (value) {
-    const val = await   toBase64(document.querySelector('#user_resume').files[0]).then((result)=>{
+Dominar.Validator.register('resume',  function (value) {
+    if(userResume){
+      return userResume;
+    }
+    const val = toBase64(document.querySelector('#user_resume').files[0]).then((result)=>{
+     console.log("comming");
      userResume = result;
      validator.validate(document.querySelector('#user_resume'));
      return true
@@ -20,7 +23,6 @@ Dominar.Validator.register('resume', async function (value) {
         validator.validate(document.querySelector('#user_resume'));
         return false
     });
-    return val;
 });
 
 var validator = new Dominar(document.querySelector('.dominar-form-carrer'), {
@@ -68,27 +70,45 @@ var validator = new Dominar(document.querySelector('.dominar-form-carrer'), {
 
 function validateResume(){
     validator.validateAll(()=>{
+      document.getElementById('spin-off').style.display = 'none';
+      document.getElementById('spin-on').style.display = 'inline-block';
         const payload = {
             email_id: document.getElementById('email_id').value,
-            mobile_no: document.getElementById('mobile_no').vaue,
+            mobile_no: document.getElementById('mobile_no').value,
             user_location: document.getElementById('user_location').value,
             user_job: document.getElementById('user_job').value,
-            user_resume: userResume
+            user_resume: userResume,
+            file_name: document.querySelector('#user_resume').files[0].name
         }
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+        xmlhttp.open("POST", "https://app-yx1k.onrender.com/pitchpro/email");
+        xmlhttp.setRequestHeader("Content-Type", "application/json");
+        xmlhttp.send(JSON.stringify(payload));
+        xmlhttp.onload = () => {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById('spin-off').style.display = 'block';
+            document.getElementById('spin-on').style.display = 'none';
+            document.getElementById('email_id').value = '';
+            document.getElementById('mobile_no').value = '';
+            document.getElementById('user_location').value = '';
+            document.getElementById('user_job').value = '';
+            document.getElementById('user_resume').value = '';
+            alert("Awesome we got your Details")
+            validator.destroy();
+          } else {
+            console.log(`Error: ${xmlhttp.status}`);
+          }
+        };
         console.log(payload);
-        document.getElementById('email_id').value = '';
-        document.getElementById('mobile_no').value = '';
-        document.getElementById('user_location').value = '';
-        document.getElementById('user_job').value = '';
     })
 }
 
-function baseDecode(){
-  document.querySelector('#dedede').innerHTML = '';
-  var link = document.createElement('a');
-  link.innerHTML = 'Download PDF file';
-  link.href = userResume;
-  link.download = 'someName'
-  link.target = '_blank';
-  document.querySelector('#dedede').appendChild(link);
-}
+// function baseDecode(){
+//   document.querySelector('#dedede').innerHTML = '';
+//   var link = document.createElement('a');
+//   link.innerHTML = 'Download PDF file';
+//   link.href = userResume;
+//   link.download = 'someName'
+//   link.target = '_blank';
+//   document.querySelector('#dedede').appendChild(link);
+// }
