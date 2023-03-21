@@ -141,6 +141,7 @@ a:hover{
     }
     .pitch-pro-logo{
         width: 150px;
+        top: 5px;
     }
     /* header.main-header-container{
         background-color: #eaedef;
@@ -501,7 +502,7 @@ a:hover{
     }
     .the-m-img img{
         width: 100%;
-        padding: 0px 25px;
+        /* padding: 0px 25px; */
     }
     .slideshow-container{
         padding-top:50px;

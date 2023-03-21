@@ -1,0 +1,14 @@
+.job-headings, .bottom-div-container {
+    text-align: center;
+}
+.bottom-line{
+    display: inline-block;
+    height: 5px;
+    width: 140px;
+    margin-top: -5px;
+    background: #3476a5;
+    border-radius: 10px;
+}
+.bottom-div-container{
+    margin-top: -10px;
+}
