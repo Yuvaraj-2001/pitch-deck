@@ -506,15 +506,26 @@ a:hover{
     .slideshow-container{
         padding-top:50px;
     }
+    span.dot{
+        height: 12px;
+        width: 12px;
+    }
+    div.slider-dot-con{
+        text-align:center;
+        padding-top: 8px;
+    }
 }
 
 
 /* Slider Section */
 /* Slideshow container */
+.slider-dot-con{
+    text-align:center;
+     padding-top: 20px;
+}
   .slideshow-container {
     position: relative;
     margin: auto;
-    padding-bottom: 40px;
   }
   .infinite-slider-container{
     position: relative;
