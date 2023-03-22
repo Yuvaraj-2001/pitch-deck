@@ -139,6 +139,12 @@ a:hover{
     .pitch-pro-common-preview{
         margin-top: 0px;
     }
+    .section-redifine-content img{
+        height: 300px;
+    }
+    .live-breath-heading{
+        text-align: center;
+    }
     .pitch-pro-logo{
         width: 150px;
     }
@@ -359,7 +365,7 @@ a:hover{
     line-height: 1.4rem;
     padding-top: 20px;
     font-weight: 700;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .featured-in{
