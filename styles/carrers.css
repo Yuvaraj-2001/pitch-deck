@@ -1,6 +1,9 @@
 .job-headings, .bottom-div-container {
     text-align: center;
 }
+.job-headings{
+    font-weight: 800;
+}
 .bottom-line{
     display: inline-block;
     height: 5px;
@@ -43,4 +46,22 @@
 }
 .card-container-openings p{
    margin-bottom: 5px;
+}
+.contact a{
+    color: #fff;
+}
+input[type="file"].form-control{
+    padding: 4px;
+}
+@media screen and (max-width: 970px) {
+    .carrer-talk-us {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .contact-talk-paragraph {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.7rem;
+    }
+    
 }
