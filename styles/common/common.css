@@ -236,7 +236,7 @@ background: #3476a5;
     margin-bottom: 2rem;
 }
 
-a {
+a, a:visited, a:hover {
     color: #3476a5;
     text-decoration: none;
     background-color: transparent;
