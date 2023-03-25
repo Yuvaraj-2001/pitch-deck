@@ -73,8 +73,12 @@
       margin-bottom: 1.3rem;
       padding-top: 4.5rem;
   }
+  .common-sub-heading{
+    margin-bottom: 0px;
+  }
   .common-para{
     text-align: center;
+    padding-top: 20px;
   }
   .img-service {
     height: 200px;
