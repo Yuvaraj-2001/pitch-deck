@@ -39,4 +39,8 @@
     background: #3476a5;
     border: 1px solid transparent;
     color: #fff;
+    margin-top: 15px;
+}
+.card-container-openings p{
+   margin-bottom: 5px;
 }
