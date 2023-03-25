@@ -277,6 +277,9 @@ a, a:visited, a:hover {
     font-size: 3rem;
     font-weight: 700;
 }
+.contact  a{
+    color: #fff;
+}
 .contact-talk-paragraph{
     font-size: 1.5rem;
     font-weight: 400;
