@@ -442,8 +442,12 @@ a{
         height: 80px;
     }
 }
-.the-m-img{display:none;}
+.desktop-slider-preview{padding-top: 30px}
+.the-m-img, .slider-dot-con{display:none;}
 @media screen and (max-width: 600px) {
+    .slider-dot-con{
+        display: block;
+    }
     .second-item-circle{
         margin-left: 0px;
     }
