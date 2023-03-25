@@ -136,7 +136,7 @@ a{
 /* Mobile View main section */
 @media screen and (max-width: 970px) {
     .pitch-pro-common-preview{
-        margin-top: -72px;
+        margin-top: -0px;
     }
     
     .section-redifine-content img{
