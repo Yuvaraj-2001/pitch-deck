@@ -184,3 +184,22 @@ a:hover{
 #spin-on{
     display:none;
 }
+
+@media only screen and (max-width: 900px) {
+    .contact-heading{
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+    .map-address-container{
+        padding-left: 0px;
+    }
+    .home-icon svg{
+        height:40px;
+        width: 40px;
+    }
+    .map-address-title{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+}
