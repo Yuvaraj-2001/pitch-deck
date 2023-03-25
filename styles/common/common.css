@@ -25,11 +25,11 @@ header.main-header-container{
 .menu-items li{
     color: #3476a5;
 }
-.menu-list-style li{
+.menu-list-style div{
     padding: 5px 15px;
     cursor: pointer;
 }
-.list-menu-mobile.menu-list-style li{
+.list-menu-mobile.menu-list-style div{
     padding: 15px 15px;
     color: #fff;
 }
@@ -153,17 +153,16 @@ background: #3476a5;
     width: 60%;
     border-bottom: 1px solid #3476a5;
 }
-.list-menu-mobile.menu-list-style li.contact{
+.list-menu-mobile.menu-list-style div.contact{
     border-bottom: 0px solid;
 }
 .navigation-logo-img{
     margin-left: 5%;
     width: 50%;
 }
-.list-menu-mobile.menu-list-style li{
+.list-menu-mobile.menu-list-style div{
     padding: 15px 15px;
     color: #3476a5;
-    border-bottom: 1px solid;
     font-weight: 800;
 }
 
