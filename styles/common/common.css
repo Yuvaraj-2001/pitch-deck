@@ -176,7 +176,8 @@ background: #3476a5;
 /* Mobile View main section */
 @media screen and (max-width: 970px) {
     header.main-header-container{
-        background-color: #eaedef;
+        /* background-color: #eaedef; */
+        background-color: #eaedefc4;
         display: flex;
         align-items: center;
     }

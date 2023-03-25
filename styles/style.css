@@ -135,11 +135,14 @@ a:hover{
     padding: 10px 0px;
     height: 50px;
 }
+
+
 /* Mobile View main section */
 @media screen and (max-width: 970px) {
     .pitch-pro-common-preview{
-        margin-top: 0px;
+        margin-top: -72px;
     }
+    
     .section-redifine-content img{
         height: 300px;
     }
