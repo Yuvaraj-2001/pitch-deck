@@ -2,6 +2,10 @@ body{
     font-family: 'Nunito', sans-serif;
     margin: 0px;
 }
+/* Video controls display none */
+video::-webkit-media-controls {
+    display:none !important;
+}
 /* Main Header and Navigation section start */
 header.main-header-container{
     position: sticky;
