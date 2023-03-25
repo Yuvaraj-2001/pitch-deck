@@ -97,6 +97,9 @@ background: #3476a5;
     border: none;
     color: #fff;
 }
+.menu-list-style li {
+    padding: 5px 15px;
+}
 .primary-color:hover{
     background: #4298d4;
     color: #fff;
