@@ -58,8 +58,16 @@
 .img-service{
   height:250px;
 }
+.ser-t-cent{
+  display: flex;
+  align-items: center;
+}
 .services-img-container{
-  margin-bottom: 40px;
+  
+}
+.blue-service-bg{
+  background-color: #e1ebf3;
+  padding: 30px;
 }
 @media screen and (max-width: 970px) {
   .common-heading{
